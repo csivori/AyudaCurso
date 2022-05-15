@@ -1,0 +1,192 @@
+/* Inicio a Borrar */
+/* header,main, footer, .DosColP, .DosCol1, .DosCol2 {border: #FF0000 0.1rem solid; min-height:100px;} */
+/* main, footer, .DosColP, .DosCol1, .DosCol2 {min-height:100px;} */
+/* .DosCols1{background-color: lightblue;} */
+/* .DosCols2{background-color: lightcoral;} */
+/* Fin a Borrar */
+
+/* Tag para marcar etiquetas y valores predeterminados */
+.CSS_Tag{font-style: italic; font-weight: bold; color: rgba(255, 128, 128, 0.8)}
+.CSS_Propiedad{font-style: italic; font-weight: bold; color:rgb(39, 168, 248)}
+.CSS_Value{font-style: italic; font-weight:normal; color: darkorange}
+.CSS_Comentariado{font-style: normal; font-weight:normal; font-size: 80%; color: rgb(128, 128, 128)}
+.CSS_TxtComun{font-style:normal; font-weight:normal; color:rgb(25, 25, 25)}
+.CSS_TxtComun80{font-style:normal; font-weight:normal; color:rgb(25, 25, 25); font-size: 80%;}
+.CSS_TxtComun60{font-style:normal; font-weight:normal; color:rgb(25, 25, 25); font-size: 60%;}
+
+/* Tag para estructura Título, Tags o Propiedades, Ejemplos */
+header, main, footer{background:white; box-shadow: 0 0 1rem rgba(83,78,76,0.5); margin:0.5rem; padding: 5px;min-width: 30rem;}
+header{display: flex;}
+h2{width: 100%; text-align: center;}
+tr td:nth-child(1){column-width: 160px;}
+
+/* Tag para estructura de las páginas con 1 Columna */
+.UnaColP{padding: 0 0.3rem;}
+
+/* Tag para estructura de las página con 2 Columnas */
+/* .DosColsP{display: grid; grid-template-columns: wrap;} */
+.DosColsP{display: flex; flex-flow: row wrap;}
+.DosCols_25{width:24%; min-width: 30rem; padding: 0 0.3rem;}
+.DosCols_50{width:49%; min-width: 30rem; padding: 0 0.3rem;}
+.DosCols_75{width:74%; min-width: 30rem; padding: 0 0.3rem;}
+
+/* Objetos Genéricos */
+.di-f{display: flex;}
+.di-b{display: block;}
+.ta-c{text-align: center;}
+.va-t{vertical-align:top;}
+.va-m{vertical-align:middle;}
+.va-b{vertical-align: bottom;}
+.ai-c{align-items:center;}
+.fl-l{float:left;}
+.fl-r{float:right;}
+.mx-0{margin-left: 0; margin-right: 0;}
+.my-0{margin-top: 0; margin-bottom: 0;}
+.mt-0{margin-top: 0;}
+.mb-0{margin-bottom: 0;}
+.ml-0{margin-left: 0;}
+.mr-0{margin-right: 0;}
+.li-n{list-style: none;}
+.rubberband{border: 2px dashed gray;}
+.w10{width: 10%;}
+.w15{width: 15%;}
+.w20{width: 20%;}
+.w25{width: 25%;}
+.w30{width: 30%;}
+.w45{width: 45%;}
+.w50{width: 50%;}
+.w55{width: 55%;}
+.w75{width: 75%;}
+.w80{width: 80%;}
+.w85{width: 85%;}
+.w100{width: 100%;}
+.wAuto{width: auto;}
+.mw-120{min-width: 120px;}
+.mw-150{min-width: 150px;}
+.h10{height: 10%;}
+.h20{height: 20%;}
+.h30{height: 30%;}
+.h50{height: 50%;}
+.h100{height: 100%;}
+.Scr{min-height: 60px; margin:10px; border: gray solid thick;}
+.SimilBrowserConMarco{display: flex; min-height: 100px; margin:10px; border: black dashed thin; position: relative;}
+.SimilContainerConMarco{display: flex; min-height: 100px; margin:10px; border: gray solid thin;}
+.SimilContainerSinMarco{display: flex; min-height: 20px; margin:10px; font-size: 70%;}
+.Elemento{width: 11%; min-width: 30px; text-align: center; border: black dashed thin; margin:0.2rem; padding: 0.3rem 0.1px; background-color: rgb(153, 153, 221);}
+.ElementoOculto{width: 11%; min-width: 30px; margin:0.3rem;}
+.Espacio11{width: 11%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
+.Espacio16{width: 16%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
+.Espacio32{width: 32%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
+
+/* Ejemplos Específicos */
+.CSS20_Marg_Gr{background-color: lightgreen; color:grey; font-size:70%; padding-bottom: 2%; min-width:150px;}
+.CSS20_Marg_Bo{background-color: black; color:gray; text-align: right; margin: 0% 6% 0% 6%; padding: 0% 3% 3%; min-width:120px;}
+.CSS20_Marg_Me{background-color: pink; color:gray; padding: 6% 6% 0% 6%; min-width:100px}
+.CSS20_Marg_Ch{background-color: lightblue; color:black; font-size:200%; margin: 6% 6% 0% 6%; padding: 0%; text-align: center; min-width:80px}
+.CSS20_AnchoPadding{margin-left: 10%; width: 4%; vertical-align: middle;}
+
+.ejCSS1001,.ejCSS1002{margin: 0.4rem;}
+.ejCSS2001{margin: 0.4rem 0; color:gray}
+.ejCSS2001>div{min-width: 100px; margin: 0 0 0 0.1rem} 
+.ejCSS3001{justify-content:flex-start; align-items:flex-start;}
+.ejCSS3002{justify-content:flex-end; align-items:center;}
+.ejCSS3003{justify-content:space-between; align-items:flex-end;}
+.ejCSS3004{justify-content:space-around; align-items:baseline;}
+.ejCSS3004 div:nth-child(1){font-size: 50%;}
+.ejCSS3004 div:nth-child(2){font-size: 250%;}
+.ejCSS3005{justify-content:space-evenly; align-items:stretch;}
+.ejCSS3006{justify-content:flex-start; align-items:flex-start;}
+.ejCSS3006 div:nth-child(2){align-self: flex-end;}
+.ejCSS3301{justify-content:flex-start; align-items:flex-start; flex-flow:row nowrap;}
+.ejCSS3302{justify-content:flex-start; align-items:flex-start; flex-flow:row-reverse nowrap;}
+.ejCSS3303{justify-content:flex-start; align-items:flex-start; flex-flow:column nowrap;}
+.ejCSS3304{justify-content:flex-start; align-items:flex-start; flex-flow:column-reverse nowrap;}
+.ejCSS3305{justify-content:flex-start; align-items:flex-start; flex-flow:row wrap;}
+.ejCSS3306{justify-content:flex-start; align-items:flex-start; flex-flow:row wrap-reverse;}
+.ejCSS3307{justify-content:flex-start; align-items:flex-start; flex-flow:row-reverse wrap-reverse;}
+.ejCSS3308{justify-content:flex-start; align-items:flex-start; flex-flow:column wrap; height:160px ;}
+.ejCSS40{justify-content:flex-start; align-items:flex-start; flex-flow:row nowrap;}
+.ejCSS400101{position:sticky; top:0;}
+.ejCSS400102{position:sticky; top:10vh;}
+.ejCSS400201{position:absolute; left: -1px; top:-1px; opacity: 0;}
+.ejCSS400202{position:absolute; left: -40px; top:20px; opacity: 0;}
+.ejCSS4002:hover .Elemento{opacity: 1;}
+.ejCSS400301{position:fixed; left: -1px; top:-1px; opacity: 0;}
+.ejCSS400302{position:fixed; left: 45vw; top:45vh; opacity: 0;}
+.ejCSS4003:hover .Elemento{opacity: 1;}
+.ejCSS400401{position:relative; left: 10px;}
+.ejCSS400402{position:relative; left: -20px; top:10px}
+
+.ejPatrones{width: 100%;height: 50vh;}
+.ejPatronesP{display: flex; flex-flow: row wrap; text-align: center; padding: 0; min-height: 60px; font-size: 0.8em;}
+.ejPatronesCelular{width: 9%; height: 110px; min-width: 66px;}
+.ejPatronesTablet{width: 15%; height: 80px}
+.ejPatronesLaptop{width: 21%; height: 70px;}
+.ejPatronesMonitor{width: 25%; height: 60px;}
+.ejPatrones2Col{width: 50%;}
+.ejPatronesColor1{background-color: rgba(140, 213, 240, 1)}
+.ejPatronesColor2{background-color: rgba(140, 213, 240, 0.7)}
+.ejPatronesColor3{background-color: rgba(140, 213, 240, 0.4)}
+.ejPatrones0101Txt{height:69%; font-size: 1.2em; margin:0; padding-top:20px; background-color: lightblue}
+.ejPatrones0102Txt{height:32%; font-size: 1.4em; margin:0; padding-top:40px; background-color: lightblue}
+.ejPatrones0103Txt{height:66%; margin:0; padding-top:10px; background-color: lightblue}
+.ejPatrones0104Txt{height:76%; margin:0; background-color: lightblue}
+.ejPatrones0201{height:40%; font-size: 1.2em; margin:0; padding-top:25px;}
+.ejPatrones0202{min-height:30%; font-size: 1.4em; margin:0; padding-top:15px;}
+.ejPatrones0203{min-height:10%; height:30%; font-size: 1em; margin:0; padding-top:8px; padding-bottom:3px;}
+.ejPatrones0204{min-height:10%; height:30%; font-size: 1em; margin:0; padding-top:5px; padding-bottom:3px;}
+.ejPatrones0302{min-height:10%; height: 35px; font-size: 1em; margin:0; padding-top:5px;}
+.ejPatrones0302:nth-of-type(2){height: 40px;}
+.ejPatrones0302:nth-of-type(3){height: 30px;}
+.ejPatrones0303{min-height:10%; height: 48px; font-size: 1em; margin:0; padding-top:5px;}
+.ejPatrones0303:nth-of-type(1){width: 30%;}
+.ejPatrones0303:nth-of-type(2){width: 70%;}
+.ejPatrones0303.ejPatronesColor3{width: 100%; height: 20px; margin-top: -7px;}
+.ejPatrones0304{min-height:10%; height:41px; font-size: 1em; margin:0; padding-top:5px;}
+.ejPatrones0304:nth-of-type(1){width: 20%;}
+.ejPatrones0304:nth-of-type(2){width: 50%;}
+.ejPatrones0304:nth-of-type(3){width: 30%;}
+.ejPatrones0401{min-height:10%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0401:nth-of-type(2){height:60%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0401:nth-of-type(3){height:90%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0402{min-height:10%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0402:nth-of-type(2){height:30%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0402:nth-of-type(3){height:50%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0403{min-height:10%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0403:nth-of-type(1){width: 25%; height:51px; margin-left: 10%;}
+.ejPatrones0403P{width: 55%; height:56px; margin-right: 10%;}
+.ejPatrones0403.ejPatronesColor2{width: 100%; height:16px; margin-left: 0%;}
+.ejPatrones0403.ejPatronesColor3{width: 100%; height:30px;}
+.ejPatrones0404{min-height:10%; font-size: 1em; margin:0; padding-top:5px}
+.ejPatrones0404:nth-of-type(1){width: 25%; height:41px; margin-left: 10%;}
+.ejPatrones0404P{width: 55%; height:46px; margin-right: 10%;}
+.ejPatrones0404.ejPatronesColor2{width: 100%; height:16px; margin-left: 0%;}
+.ejPatrones0404.ejPatronesColor3{width: 100%; height:19px;}
+.ejPatrones0501Scr{margin-left: 10%}
+.ejPatrones05P{display: flex;}
+.ejPatrones0501.ejPatronesColor1{width: 100%; height:95.5px; margin-left: -100%;}
+.ejPatrones0501.ejPatronesColor2{width: 100%; height:95.5px; margin-left: 0%;}
+.ejPatrones0502{width: 50%; height:66px; margin-left: 0%;}
+.ejPatronesEspacioFinal{min-height:100px; margin-right: 10%;}
+.ejPiola01{background-color: tomato; border-radius: 1rem; margin:0 0.1rem 0.1rem 0;}
+.ejPiola01:active{margin:0.1rem 0 0 0.1rem;}
+.ejPiola0101:hover{box-shadow: 3px 3px 3px gray;}
+.ejPiola0102:hover{font-weight: bold;}
+.ejPiola0103{transition: all 200ms ease-in-out; background-color:transparent; border: none;}
+.ejPiola0103:hover{transform: scale(1.2);}
+.ejPiola0103:active{transform: scale(1);}
+.ejPiola02{padding:1rem; background-color:white; box-shadow: 0 0 1rem rgba(83,78,76,0.5); margin:0.5rem;}
+.ejPiola03{padding:1rem; background-color:white; box-shadow: 0 0 2rem rgba(83,78,76,0.5); margin:0.5rem; border: 4px solid; border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;}
+.ejPiola04{padding:1rem; background-color:white; box-shadow: 0 0 5rem rgba(83,78,76,0.5); margin:0.5rem; border: 20px solid; border-image: url(../img/agua-piscina.jpg) 60 30;}
+.ejPiola05{position: fixed; z-index: 2; text-align: right; list-style: none;}
+.ejPiola05 a{text-decoration: none; padding: 10px 15px; background-color: #000; color:#FFF;display:block; min-width: 100px;}
+.ejPiola05 a:hover{background-color: #007}
+.ejPiola05>li{float: left;}
+.ejPiola05 li ul{display: none; position: absolute; min-width: 140px;}
+.ejPiola05 li:hover>ul{display: block;}
+.ejPiola05 li ul li ul{right: -140px; top: 0;}
+.ejPiola06{margin-top: 100px; position: relative; z-index: 1;}
+
+@media (max-width:1021px){
+    .DosCols_50{width:98%;}    
+}

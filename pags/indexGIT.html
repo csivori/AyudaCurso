@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaVSC.bmp">
+    <link rel="STYLESHEET" href="../css/estilos.css">
+    <!-- <link rel="STYLESHEET" href="../css/AyudaHTML0.css"> -->
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Ayuda de Visual Studio Code</h2>
+        <br>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Item</th>
+                <th>Comentario</th>
+            </tr>
+            <tr style="background-color:aquamarine;">
+                <td rowspan="11" style="background-color:aquamarine;"></td>
+                <td colspan="3">
+                    <h3>Inicializar un nuevo repositorio GIT en Visual Studio Code</h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">1</td>
+                <td>VSC <b><i>File / Open Folder...</i></b></td>
+                <td>Inicializar la Carpeta Raíz del repositorio en la PC</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">2</td>
+                <td>VSC <b><i>Terminal / New Terminal</i></b></td>
+                <td>Abre la terminal para ingresar a la Terminal GIT Bash para ejecutar los comandos</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">3</td>
+                <td>VSC <b>+<small>v</small> <i>/ Git Bash</i></b></td>
+                <td>Selecciona la terminal GIT Bash para ejecutar los comandos</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">4</td>
+                <td>$ <b>git --version</b></td>
+                <td>Asegurar que GIT esta instalado en la PC, mostrando la versión instalada</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">5</td>
+                <td>$ <b>git init</b></td>
+                <td>Inicializa el repositorio de GIT creando en esa Carpeta una Subcarpeta ".git"</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">6</td>
+                <td>$ <b>git config --global user.name "<i>Nombre Apellido</i>"</b></td>
+                <td>Configura el global username luego de instalar GIT</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">7</td>
+                <td>$ <b>git config --global user.mail "<i>MiNombre@ejemplo.com</i>"</b></td>
+                <td>Configura el global usermail luego de instalar GIT</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">8</td>
+                <td>$ <b>git add *</b></td>
+                <td>Prepara el conjunto de archivos a añadir al repositorio de GIT creado en esta carpeta</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">9</td>
+                <td>$ <b>git commit -m "<i>Versión V<small>##</small></i>"</b></td>
+                <td>Confirma el ingreso al repositorio de GIT de los archivos pre-añadidos</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">10</td>
+                <td>$ <b>git push <i>origin master</i></b></td>
+                <td>Sube los cambios del repositorio de GIT a GIT-HUB</td>
+            </tr>
+            <tr style="background-color: cadetblue;">
+                <td rowspan="5" style="background-color: cadetblue;"></td>
+                <td colspan="3">
+                    <h3>Linkear un repositorio GIT &lt;==&gt; GIT-HUB</h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">1</td>
+                <td><b>New Repository en GIT-HUB</b></td>
+                <td>Crear el nuevo repositorio en GIT-HUB. Luego tomar la dirección https (<i>https://github.com/&lt;cuenta&gt;/&lt;nombre&gt;.git</i>) para utiliza en el paso 2</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">2</td>
+                <td>$ <b>git remote add <i>origin https://github.com/&lt;cuenta&gt;/&lt;nombre&gt;.git</i></b></td>
+                <td>Define la ruta del repositorio remoto de GIT-HUB para sincronizar con el local</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">3</td>
+                <td>$ <b>git branch <i>-M main</i></b></td>
+                <td>Crea el branch main</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;">4</td>
+                <td>$ <b>git push <i>-u origin main</i></b></td>
+                <td>Tomara unos minutos para sincronizar el repositorio local con el de github.com</td>
+            </tr>
+            <tr style="background-color: cadetblue;">
+                <td rowspan="7" style="background-color: cadetblue;"></td>
+                <td colspan="3">
+                    <h3>Otros Comandos de GIT</h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: end;"></td>
+                <td>$ <b>git help <i>comando</i></b></td>
+                <td>Abre la ayuda en línea del <i>comando</i> en una nueva solapa del explorador</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;"></td>
+                <td>$ <b>git status</b></td>
+                <td>En cualquier momento, muestra el estado de los cambios del repositorio de GIT y propone algunas acciones</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;"></td>
+                <td>$ <b>git checkout -- <i>arch.ext</i></b></td>
+                <td>En cualquier momento, restaura el archivo <i>arch.ext</i> desde la última versión en el repositorio de GIT</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;"></td>
+                <td>$ <b>git checkout <i>branch</i></b></td>
+                <td>Cambia el espacio de trabajo al <i>branch</i> del repositorio de GIT</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;"></td>
+                <td>$ <b>git diff -- <i>arch.ext</i></b></td>
+                <td>En cualquier momento, muestra las diferencias del archivo <i>arch.ext</i> contra la última versión en el repositorio de GIT</td>
+            </tr>
+            <tr>
+                <td style="text-align: end;"></td>
+                <td>$ <b>git log</b></td>
+                <td>En cualquier momento, muestra el log de versiones en el repositorio de GIT</td>
+            </tr>
+        </table>
+        <br>
+        <img src="../img/CicloGIT-GITHUB.png" alt="GIT-GITHUB" width=1063 height=387>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

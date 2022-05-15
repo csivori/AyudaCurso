@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp">
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css">
+</head>
+
+<body>
+    <header>
+        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Compilado de Instrucciones Organización de Código CSS</h2>
+    </header>
+    <main>
+        <!-- Explicaciones -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <h4>Para que se utiliza CSS: <span class="CSS_TxtComun">Es el lenguaje que se utiliza para aplicar un
+                        estilo a un HTML. Describe como deben mostrarse los elementos de un HTML</span></h4>
+                <h4>Estructura de CSS: <span class="CSS_Tag">selector<span class="CSS_TxtComun"> { <span
+                                class="CSS_Propiedad">propiedad</span>: <span class="CSS_Value">valor</span> ;} </span>
+                </h4>
+                <h4>Selectores +Usados:</h4>
+                <table>
+                    <tr>
+                        <td><span class="CSS_Tag">*</span>{}</td>
+                        <td>Selecciona todos los elementos del HTML</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">tag</span>{}</td>
+                        <td>Cualquier tipo de <span class="CSS_Tag">tag</span> HTML (<span class="CSS_Tag">body</span>,
+                            <span class="CSS_Tag">header</span>, <span class="CSS_Tag">main</span>, <span
+                                class="CSS_Tag">footer</span>, <span class="CSS_Tag">p</span>, <span
+                                class="CSS_Tag">h1</span>..<span class="CSS_Tag">h6</span>, etc.)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">tag.clase</span>{}</td>
+                        <td>Selecciona los <span class="CSS_Tag">tag</span> HTML con la clase <span
+                                class="CSS_Tag">.clase</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">tag1,tag2,tagN</span>{}</td>
+                        <td>Selecciona todos los elementos de tipo <span class="CSS_Tag">tag1</span>, <span
+                                class="CSS_Tag">tag2</span> y <span class="CSS_Tag">tagN</span> HTML</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">#id</span>{}</td>
+                        <td>Selecciona el elemento con este id en el HTML</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">.clase</span>{}</td>
+                        <td>Selecciona todos los elementos de esta clase en el HTML</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">.clase1.clase2</span>{}</td>
+                        <td>Selecciona todos los elementos que tienen las 2 clases en el HTML</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">.clase1 .clase2</span>{}</td>
+                        <td>Selecciona todos los elementos que tienen la clase2 descendiendo de la clase1 en el HTML
+                        </td>
+                    </tr>
+                </table>
+                <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Mas
+                    Selectores...</a><br><br>
+            </div>
+            <div class="DosCols_50">
+                <h4>Pseudo-Clases:<span class="CSS_TxtComun">Las pseudo-clases sirven para definir un estado específico
+                        de un elementio.</span></h4>
+                <h4>Pseudo-Clases +Usadas:</h4>
+                <table>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:focus</span>{}</td>
+                        <td>Aplica el estilo al elemento cuando esta en foco</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:link</span>{}</td>
+                        <td>Aplica el estilo a un elemento cuando aún esta no-visitado</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:visited</span>{}</td>
+                        <td>Aplica el estilo a un elemento cuando ya ha sido visitado</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:hover</span>{}</td>
+                        <td>Aplica el estilo al elemento cuando el ratón pasa por encima</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:nth-child(n)</span>{}</td>
+                        <td>Aplica el estilo al elemento N de tipo selector que es N hijo de su padre</td>
+                    </tr>
+                </table>
+                <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Mas
+                    Selectores...</a><br><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Ejemplos -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <h3>Ej.1: Colorear el fondo del <span class="CSS_Tag">Header</span> de Rojo, <span class="CSS_Tag">Body</span> de Azul, <span class="CSS_Tag">Footer</span> de Verde y el elemento con id=MenuPrincipal de Amarillo</h3>
+                <div class="SimilContainerConMarco">
+                    <div class="ejCSS1001">
+                        <div class="CSS_Tag">header<span class="CSS_TxtComun">{<span class="CSS_Propiedad">background-color
+                                </span>: <span class="CSS_Value">#FF0000</span>;}</div>
+                        <div class="CSS_Tag">footer<span class="CSS_TxtComun">{<span class="CSS_Propiedad">background-color
+                                </span>: <span class="CSS_Value">#00FF00</span>;}</span></div>
+                        <div class="CSS_Tag">body<span class="CSS_TxtComun">{<span class="CSS_Propiedad">background-color
+                                </span>: <span class="CSS_Value">#0000FF</span>;}</span></div>
+                        <div class="CSS_Tag">#MenuPrincipal<span class="CSS_TxtComun">{<span class="CSS_Propiedad">background-color
+                                </span>: <span class="CSS_Value">#00FFFF</span>;}</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="DosCols_50">
+                <h3>Ej.2: Colorear los elementos de tipo <span class="CSS_Tag">a</span> según el estado del link:</h3>
+                <div class="SimilContainerConMarco">
+                    <div class="ejCSS1002">
+                        <div class="CSS_Comentariado">/* Link No Visitado aún */</div>
+                        <div class="CSS_Tag">a:link<span class="CSS_TxtComun">{<span class="CSS_Propiedad">color
+                                </span>: <span class="CSS_Value">#FF0000</span>;}</div>
+                        <div class="CSS_Comentariado">/* Link Ya Visitado */</div>
+                        <div class="CSS_Tag">a:visited<span class="CSS_TxtComun">{<span class="CSS_Propiedad">color
+                                </span>: <span class="CSS_Value">#00FF00</span>;}</span></div>
+                        <div class="CSS_Comentariado">/* Mouse sobre el Link */</div>
+                        <div class="CSS_Tag">a:hover<span class="CSS_TxtComun">{<span class="CSS_Propiedad">color
+                                </span>: <span class="CSS_Value">#FF00FF</span>;}</span></div>
+                        <div class="CSS_Comentariado">/* Link Seleccionado */</div>
+                        <div class="CSS_Tag">a:active<span class="CSS_TxtComun">{<span class="CSS_Propiedad">color
+                                </span>: <span class="CSS_Value">#0000FF</span>;}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp">
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css">
+</head>
+
+<body>
+    <header>
+        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Compilado de Instrucciones CSS de Flex-box: Justify-Content, Align-Items y Align-Self</h2>
+    </header>
+    <main>
+        <!-- Explicaciones -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <p class="CSS_Propiedad">justify-content:</p>
+                <ul>
+                    <li><span class="CSS_Value">flex-start</span>: Alinea elementos a la parte izquierda del contenedor
+                    </li>
+                    <li><span class="CSS_Value">flex-end</span>: Alinea elementos a la parte derecha del contenedor</li>
+                    <li><span class="CSS_Value">space-between</span>: Distribuye horizontalmente los elementos dentro
+                        del
+                        contenedor (sin espacio a izquierda ni a derecha del grupo)</li>
+                    <li><span class="CSS_Value">space-around</span>: Distribuye horizontalmente los elementos dentro del
+                        contenedor (asignando un margen izq. y der. a cada elemento)</li>
+                    <li><span class="CSS_Value">space-evenly</span>: Distribuye horizontalmente los elementos dentro del
+                        contenedor (con espacio a izquierda ni a derecha del grupo)</li>
+                </ul>
+                <a href="https://www.w3schools.com/css/css3_flexbox_container.asp#justify-content" target="_blank">Mas
+                    sobre Justify-Content...</a><br><br>
+            </div>
+            <div class="DosCols_50">
+                <p class="CSS_Propiedad">align-items, align-self, align-content:</p>
+                <ul>
+                    <li><span class="CSS_Value">flex-start</span>: Alinea verticalmente elementos a la parte superior
+                        del
+                        contenedor</li>
+                    <li><span class="CSS_Value">flex-end</span>: Alinea verticalmente elementos a la parte inferior del
+                        contenedor</li>
+                    <li><span class="CSS_Value">center</span>: Alinea verticalmente elementos al centro del contenedor
+                    </li>
+                    <li><span class="CSS_Value">baseline</span>: Alinea los elementos en la línea base del font de cada
+                        elemento del contenedor</li>
+                    <li><span class="CSS_Value">stretch</span>: Elementos se estiran para ajustarse al contenedor</li>
+                </ul>
+                <a href="https://www.w3schools.com/css/css3_flexbox_container.asp#align-items" target="_blank">Mas sobre
+                    Align-Items, Align-Self, Align-Content...</a><br><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Ejemplos -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <h3>Ej.1: <span class="CSS_Propiedad">justify-content</span>:<span class="CSS_Value">flex-start</span> + <span
+                        class="CSS_Propiedad">align-items</span>:<span class="CSS_Value">flex-start </span> <span
+                        class="CSS_TxtComun80">(Alinea los elementos a la parte superior izquierda del contenedor)</span>
+                </h3>
+                <div class="SimilContainerConMarco ejCSS3001">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <h3>Ej.2: <span class="CSS_Propiedad">justify-content</span>:<span class="CSS_Value">flex-end</span> + <span
+                        class="CSS_Propiedad">align-items</span>:<span class="CSS_Value">center </span> <span
+                        class="CSS_TxtComun80">(Alinea los elementos al medio derecho del contenedor)</span></h3>
+                <div class="SimilContainerConMarco ejCSS3002">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <h3>Ej.3: <span class="CSS_Propiedad">justify-content</span>:<span class="CSS_Value">space-between</span> +
+                    <span class="CSS_Propiedad">align-items</span>:<span class="CSS_Value">flex-end </span> <span
+                        class="CSS_TxtComun80">(Distribuye
+                        los elementos en la parte inferior del contenedor)</span>
+                </h3>
+                <div class="SimilContainerConMarco ejCSS3003">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <div class="SimilContainerSinMarco ejCSS3003">
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio32">Espacio</div>
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio32">Espacio</div>
+                    <div class="ElementoOculto"></div>
+                </div>
+            </div>
+            <div class="DosCols_50">
+                <h3>Ej.4: <span class="CSS_Propiedad">justify-content</span>:<span class="CSS_Value">space-around</span> +
+                    <span class="CSS_Propiedad">align-items</span>:<span class="CSS_Value">baseline </span> <span
+                        class="CSS_TxtComun80">(Distribuye
+                        los elementos con distinto tamaño de font alineaándolos a la línea base del Texto del
+                        contenedor)</span>
+                </h3>
+                <div class="SimilContainerConMarco ejCSS3004">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <div class="SimilContainerSinMarco ejCSS3004">
+                    <p class="Espacio11">Esp Izq</p>
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio11">Esp Der</div>
+                    <div class="Espacio11">Esp Izq</div>
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio11">Esp Der</div>
+                    <div class="Espacio11">Esp Izq</div>
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio11">Esp Der</div>
+                </div>
+                <h3>Ej.5: <span class="CSS_Propiedad">justify-content</span>:<span class="CSS_Value">space-evenly</span> +
+                    <span class="CSS_Propiedad">align-items</span>:<span class="CSS_Value">stretch </span> <span
+                        class="CSS_TxtComun80">(Distribuye
+                        los elementos igualitariamente asignándoles el alto del
+                        contenedor)</span>
+                </h3>
+                <div class="SimilContainerConMarco ejCSS3005">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <div class="SimilContainerSinMarco ejCSS3005">
+                    <p class="Espacio16">Espacio</p>
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio16">Espacio</div>
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio16">Espacio</div>
+                    <div class="ElementoOculto"></div>
+                    <div class="Espacio16">Espacio</div>
+                </div>
+                <h3>Ej.6: <span class="CSS_Propiedad">justify-content</span>:<span class="CSS_Value">flex-start</span> +
+                    <span class="CSS_Propiedad">align-items</span>:<span class="CSS_Value">flex-start</span> + B1.<span
+                        class="CSS_Propiedad">align-self</span>:<span class="CSS_Value">flex-start </span> <span
+                        class="CSS_TxtComun80">(Alinea A1 y C1 a la parte superior izquierda y B1 a la parte inferior
+                        izquierda del contenedor)</span>
+                </h3>
+                <div class="SimilContainerConMarco ejCSS3006">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

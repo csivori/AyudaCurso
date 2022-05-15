@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <script
+      src="https://kit.fontawesome.com/df986e655c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>Compilado de Ejemplos HTML Piolas</h2>
+    </header>
+    <main>
+      <!-- Explicaciones -->
+      <div class="DosColsP">
+        <div class="DosCols_50"></div>
+        <div class="DosCols_50"></div>
+      </div>
+    </main>
+    <footer>
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <h3>Ej.1: Botones Canchero con bordes redondeados y:</h3>
+          <table class="w80">
+            <tr>
+              <td class="w30">Margin al clickear</td>
+              <td class="w55">
+                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
+                  >margin</span
+                >:<span class="CSS_Value">0 0.1rem 0.1rem 0</span>;}<br />
+                <span class="CSS_Tag">.class:active</span>{<span
+                  class="CSS_Propiedad"
+                  >margin</span
+                >:<span class="CSS_Value">0.1rem 0 0 0.1rem</span>;}
+              </td>
+              <td class="w15 ta-c">
+                <button class="ejPiola01">Acción</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="w30">Sombra cuando pasas x encima</td>
+              <td class="w55">
+                <span class="CSS_Tag">.class:hover</span>{<span
+                  class="CSS_Propiedad"
+                  >box-shadow</span
+                >:<span class="CSS_Value">2px 2px 2px gray</span>;}
+              </td>
+              <td class="w15 ta-c">
+                <button class="ejPiola01 ejPiola0101">Acción</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="w30">Bold cuando pasas x encima</td>
+              <td class="w55">
+                <span class="CSS_Tag">.class:hover</span>{<span
+                  class="CSS_Propiedad"
+                  >font-weight</span
+                >:<span class="CSS_Value">bold</span>;}
+              </td>
+              <td class="w15 ta-c">
+                <button class="ejPiola01 ejPiola0102">Acción</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="w30">Se agranda cuando pasas x encima</td>
+              <td class="w55">
+                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
+                  >transition</span
+                >:<span class="CSS_Value">all 200ms ease-in-out</span>;}<br />
+                <span class="CSS_Tag">.class:hover</span>{<span
+                  class="CSS_Propiedad"
+                  >transform</span
+                >:<span class="CSS_Value">scale(1.2)</span>;}
+              </td>
+              <td class="w15 ta-c">
+                <button class="ejPiola01 ejPiola0103">
+                  <img src="../img/GMeet.png" alt="salir" />
+                </button>
+              </td>
+            </tr>
+          </table>
+          <h3>
+            Ej.2: Recuadro Canchero con fondo blanco y sombra faded en los
+            bordes
+          </h3>
+          <div class="DosColsP">
+            <div class="DosCols_75">
+              <h4>
+                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
+                  >background-color</span
+                >:<span class="CSS_Value">white</span>;
+                <span class="CSS_Propiedad">box-shadow</span>:<span
+                  class="CSS_Value"
+                  >0 0 1rem rgba(83,78,76,0.5)</span
+                >; <span class="CSS_Propiedad">margin</span>:<span
+                  class="CSS_Value"
+                  >0.5rem</span
+                >;}
+              </h4>
+            </div>
+            <div class="DosCols_25">
+              <div class="ejPiola02">
+                <p>Recuadro Canchero !!</p>
+              </div>
+            </div>
+          </div>
+          <h3>
+            Ej.3: Recuadro Colorido con fondo blanco y sombra faded en los
+            bordes
+          </h3>
+          <div class="DosColsP">
+            <div class="DosCols_75">
+              <h4>
+                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
+                  >background-color</span
+                >:<span class="CSS_Value">white</span>;
+                <span class="CSS_Propiedad">box-shadow</span>:<span
+                  class="CSS_Value"
+                  >0 0 1rem rgba(83,78,76,0.5)</span
+                >; <span class="CSS_Propiedad">margin</span>:<span
+                  class="CSS_Value"
+                  >0.5rem</span
+                >; <span class="CSS_Propiedad">border</span>:<span
+                  class="CSS_Value"
+                  >4px solid</span
+                >; <span class="CSS_Propiedad">border-image</span>:<span
+                  class="CSS_Value"
+                  >conic-gradient(red, yellow, lime, aqua, blue, magenta, red)
+                  1</span
+                >;}
+              </h4>
+            </div>
+            <div class="DosCols_25">
+              <div class="ejPiola03">
+                <p>Recuadro Colorido !!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="DosCols_50">
+          <h3>
+            Ej.4: Recuadro dentro de Imagen con fondo blanco y sombra faded en
+            los bordes
+          </h3>
+          <div class="DosColsP">
+            <div class="DosCols_75">
+              <h4>
+                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
+                  >background-color</span
+                >:<span class="CSS_Value">white</span>;
+                <span class="CSS_Propiedad">box-shadow</span>:<span
+                  class="CSS_Value"
+                  >0 0 1rem rgba(83,78,76,0.5)</span
+                >; <span class="CSS_Propiedad">margin</span>:<span
+                  class="CSS_Value"
+                  >0.5rem</span
+                >; <span class="CSS_Propiedad">border</span>:<span
+                  class="CSS_Value"
+                  >4px solid</span
+                >; <span class="CSS_Propiedad">border-image</span>:<span
+                  class="CSS_Value"
+                  >url(../img/agua-piscina.jpg) 60 30</span
+                >;}
+              </h4>
+            </div>
+            <div class="DosCols_25">
+              <div class="ejPiola04">
+                <p>Recuadro Dentro de Imagen !!</p>
+              </div>
+            </div>
+          </div>
+          <h3>Ej.5: Menú y Submenú sin Bootstrap</h3>
+          <ul class="ejPiola05">
+            <li>
+              <a href="#">Menu 1</a>
+              <ul>
+                <li><a href="#">SubMenu 1.1</a></li>
+                <li>
+                  <a href="#">SubMenu 1.2</a>
+                  <ul>
+                    <li><a href="#">SubSubMenu 1.2.1</a></li>
+                    <li><a href="#">SubSubMenu 1.2.2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">SubMenu 1.3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Menu 2</a></li>
+            <li>
+              <a href="#">Menu 3</a>
+              <ul>
+                <li><a href="#">SubMenu 3.1</a></li>
+                <li><a href="#">SubMenu 3.2</a></li>
+                <li>
+                  <a href="#">SubMenu 3.3</a>
+                  <ul>
+                    <li><a href="#">SubSubMenu 3.3.1</a></li>
+                    <li><a href="#">SubSubMenu 3.3.2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">SubMenu 3.4</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h3 class="ejPiola06">
+            Ej.6: Iconos animados para agregar como Preloader (Font Awesome)
+          </h3>
+          <table class="w75">
+            <tr>
+              <td class="di-f">
+                &lt;<span class="CSS_Tag">i </span
+                ><span class="CSS_Propiedad">class</span>="<span
+                  class="CSS_Value"
+                  >fas fa-spinner fa-spin</span
+                >"&gt;
+              </td>
+              <td class="w15">
+                <i class="fas fa-spinner fa-spin fa-2x"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="di-f">
+                &lt;<span class="CSS_Tag">i </span
+                ><span class="CSS_Propiedad">class</span>="<span
+                  class="CSS_Value"
+                  >fas fa-spinner fa-pulse</span
+                >"&gt;
+              </td>
+              <td class="w15">
+                <i class="fas fa-spinner fa-pulse fa-2x"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="di-f">
+                &lt;<span class="CSS_Tag">i </span
+                ><span class="CSS_Propiedad">class</span>="<span
+                  class="CSS_Value"
+                  >fas fa-circle-notch fa-spin</span
+                >"&gt;
+              </td>
+              <td class="w15">
+                <i class="fas fa-circle-notch fa-spin fa-2x"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="di-f">
+                &lt;<span class="CSS_Tag">i </span
+                ><span class="CSS_Propiedad">class</span>="<span
+                  class="CSS_Value"
+                  >fas fa-sync fa-spin</span
+                >"&gt;
+              </td>
+              <td class="w15">
+                <i class="fas fa-sync fa-spin fa-2x"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="di-f">
+                &lt;<span class="CSS_Tag">i </span
+                ><span class="CSS_Propiedad">class</span>="<span
+                  class="CSS_Value"
+                  >fas fa-cog fa-spin</span
+                >"&gt;
+              </td>
+              <td class="w15">
+                <i class="fas fa-cog fa-spin fa-2x"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="di-f">
+                &lt;<span class="CSS_Tag">i </span
+                ><span class="CSS_Propiedad">class</span>="<span
+                  class="CSS_Value"
+                  >fas fa-stroopwafel fa-spin</span
+                >"&gt;
+              </td>
+              <td class="w15">
+                <i class="fas fa-stroopwafel fa-spin fa-2x"></i>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

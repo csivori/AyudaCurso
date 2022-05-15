@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp">
+    <link rel="STYLESHEET" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Compilado de Instrucciones HTML de Tablas</h2>
+        <br>
+    </header>
+    <h3>table: Tabla sin borde + tr: Fila de la Tabla + td: Celda de la Fila</h3>
+    <table>
+        <tr>
+            <td>Celda A1</td>
+            <td>Celda B1</td>
+            <td>Celda C1</td>
+        </tr>
+        <tr>
+            <td>Celda A2</td>
+            <td>Celda B2</td>
+            <td>Celda C2</td>
+        </tr>
+        <tr>
+            <td>Celda A3</td>
+            <td>Celda B3</td>
+            <td>Celda C3</td>
+        </tr>
+    </table>
+
+    <h3>table: Tabla con borde extrude + th: Fila Header + tr: Fila de la Tabla + td: Celda de la Fila</h3>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>Título A1</th>
+                <th>Título B1</th>
+                <th>Título C1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celda A2</td>
+                <td>Celda B2</td>
+                <td>Celda C2</td>
+            </tr>
+            <tr>
+                <td>Celda A3</td>
+                <td>Celda B3</td>
+                <td>Celda C3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>table: Tabla con borde extrude + th: Fila Header + tr: Fila de la Tabla + td: Celda de la Fila</h3>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>Título A1</td>
+                <th colspan="2">Título B1:C1</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">Celda A2:C2</td>
+            </tr>
+            <tr>
+                <td>Celda A3</td>
+                <td rowspan="2">Celda B3:B4</td>
+                <td>Celda C3</td>
+            </tr>
+            <tr>
+                <td>Celda A4</td>
+                <td>Celda C4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

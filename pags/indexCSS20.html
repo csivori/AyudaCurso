@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp">
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css">
+</head>
+
+<body>
+    <header>
+        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Compilado de Instrucciones CSS de Flex-box: Justify-Content, Align-Items y Align-Self</h2>
+    </header>
+    <main>
+        <!-- Explicaciones -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <h4 class="CSS_Propiedad">Margin</h4>
+                <div class="CSS_TxtComun">Esta propiedad de Estilo se usa
+                    para crear un
+                    espacio alrededor de
+                    un elemento, antes que inicie el área con fondo (<span class="CSS_Propiedad">background</span>) y
+                    cualquier borde (<span class="CSS_Propiedad">border</span>) definido.<br>
+                    <br>
+                    Los valores pueden ser: <span class="CSS_Value">auto</span> el navegador calcula el márgen / <span
+                        class="CSS_Value">length</span> especifica un márgen en px, pt, cm, etc. / <span
+                        class="CSS_Value">%</span> especifica un márgen en % del ancho del elemento contenedor / <span
+                        class="CSS_Value">inherit</span> especifica que el márgen debe heredarse del elemento padre<br>
+                    <br>Se puede
+                    definir uno para un lado en particular <span class="CSS_Propiedad">margin-top</span>: <span
+                        class="CSS_Value">10px</span> (o
+                    <span class="CSS_Propiedad">margin-right</span>, <span class="CSS_Propiedad">margin-bottom</span>, <span
+                        class="CSS_Propiedad">margin-left
+                    </span>) o también se puede definir varios lados al mismo tiempo:
+                    <ul>
+                        <span class="CSS_Propiedad">margin</span>: <span class="CSS_Value">10px</span> los 4 lados<br>
+                        <span class="CSS_Propiedad">margin</span>: <span class="CSS_Value">10px 5px</span> 10px para Superior
+                        e Inferior y 5px para Derecho e Izquierdo<br>
+                        <span class="CSS_Propiedad">margin</span>: <span class="CSS_Value">10px 5px 2px</span> 10px para
+                        Superior, 5px para Derecho e Izquierdo y 2px para Inferior<br>
+                        <span class="CSS_Propiedad">margin</span>: <span class="CSS_Value">10px 5px 2px 3px</span> 10px para
+                        Superior, 5px para Derecho, 2px para Inferior y 3px para Izquierdo<br>
+                    </ul>
+                </div>
+                <a href="http://www.w3schools.com/css/css_margin.asp" target="_blank">Mas
+                    sobre Márgenes...</a><br><br>
+            </div>
+            <div class="DosCols_50">
+                <h4 class="CSS_Propiedad">Padding</h4>
+                <div class="CSS_TxtComun">Esta propiedad de Estilo se usa para crear un espacio dentro del borde y
+                    alrededor del Texto o Imagen.<br><br>
+                    Los valores pueden ser: <span class="CSS_Value">length</span> especifica un márgen en px, pt, cm,
+                    etc.
+                    <span class="CSS_Value">%</span> especifica un márgen interno en % del ancho del elemento
+                    contenedor
+                    <span class="CSS_Value">inherit</span> especifica que el márgen interno debe heredarse del
+                    elemento padre<br><br>Se puede definir un lado en particular <span
+                        class="CSS_Propiedad">padding-top</span>: <span class="CSS_Value">10px</span> (o
+                    <span class="CSS_Propiedad">padding-right</span>, <span class="CSS_Propiedad">padding-bottom</span>, <span
+                        class="CSS_Propiedad">padding-left
+                    </span>) o también se puede definir varios lados al mismo tiempo:
+                    <ul>
+                        <span class="CSS_Propiedad">padding</span>: <span class="CSS_Value">10px</span> los 4 lados<br>
+                        <span class="CSS_Propiedad">padding</span>: <span class="CSS_Value">10px 5px</span> 10px para Superior
+                        e Inferior y 5px para Derecho e Izquierdo<br>
+                        <span class="CSS_Propiedad">padding</span>: <span class="CSS_Value">10px 5px 2px</span> 10px para
+                        Superior, 5px para Derecho e Izquierdo y 2px para Inferior<br>
+                        <span class="CSS_Propiedad">padding</span>: <span class="CSS_Value">10px 5px 2px 3px</span> 10px para
+                        Superior, 5px para Derecho, 2px para Inferior y 3px para Izquierdo<br>
+                    </ul>
+                </div>
+                <a href="http://www.w3schools.com/css/css_padding.asp" target="_blank">Mas
+                    sobre Padding...</a><br><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Ejemplos -->
+        <div class="UnaColsP">
+
+
+            <h3>Ej.1: Aplicar al Elemento 5 el estilo: <span class="CSS_Propiedad">margin</span>: <span class="CSS_Value">10px 5px 2px 3px</span> + <span class="CSS_Propiedad">padding</span>: <span class="CSS_Value">2px 5px</span></h3><br>
+            <div class="SimilContainerConMarco">
+                <div>
+                    <div class="ejCSS2001">
+                        <span class="Elemento"> Elemento 1 Superior </span>
+                        <span class="Elemento"> Elemento 2 Superior </span>
+                    </div>
+                    <div class="ejCSS2001" style="display:Flex">
+                        <div class="Elemento">Elemento 4 Lateral</div>
+                        <div class="CSS20_Marg_Gr">
+                            <img class="CSS20_AnchoPadding" src="../img/FlechaVerticalDoble.png"><i>Margin
+                                10px</i></img>
+                            <div class="CSS20_Marg_Bo">BORDER
+                                <div class="CSS20_Marg_Me">
+                                    <div class="CSS20_Marg_Ch">Area del TEXTO a Mostrar del Elemento 5</div>
+                                    <img class="CSS20_AnchoPadding" src="../img/FlechaVerticalDoble.png"><i>Padding
+                                        2px</i></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+/* Inicio a Borrar */
+/* header,main, footer, .DosColP, .DosCol1, .DosCol2 {border: #FF0000 0.1rem solid; min-height:100px;} */
+/* main, footer, .DosColP, .DosCol1, .DosCol2 {min-height:100px;} */
+/* .DosCols1{background-color: lightblue;} */
+/* .DosCols2{background-color: lightcoral;} */
+/* Fin a Borrar */
+
+/* Tag para marcar etiquetas y valores predeterminados */
+.CSS_Tag{font-style: italic; font-weight: bold; color: rgba(255, 128, 128, 0.8)}
+.CSS_Propiedad{font-style: italic; font-weight: bold; color:rgb(39, 168, 248)}
+.CSS_Value{font-style: italic; font-weight:normal; color: darkorange}
+.CSS_Comentariado{font-style: normal; font-weight:normal; font-size: 80%; color: rgb(128, 128, 128)}
+.CSS_TxtComun{font-style:normal; font-weight:normal; color:rgb(25, 25, 25)}
+.CSS_TxtComun80{font-style:normal; font-weight:normal; color:rgb(25, 25, 25); font-size: 80%;}
+
+/* Tag para estructura Título, Tags o Propiedades, Ejemplos */
+header, main, footer{background:white; box-shadow: 0 0 1rem rgba(83,78,76,0.5); margin:0.5rem;}
+header{display: flex;}
+h2{width: 100%; text-align: center;}
+tr td:nth-child(1){column-width: 160px;}
+
+/* Tag para estructura de las páginas con 1 Columna */
+.UnaColP{padding: 0 0.3rem;}
+
+/* Tag para estructura de las página con 2 Columnas */
+.DosColsP{display: flex; flex-wrap: wrap;}
+.DosCols_25{width:24%; min-width: 30rem; padding: 0 0.3rem;}
+.DosCols_50{width:49%; min-width: 30rem; padding: 0 0.3rem;}
+.DosCols_75{width:74%; min-width: 30rem; padding: 0 0.3rem;}
+
+/* Objetos Genéricos */
+.SimilBrowserConMarco{display: flex; min-height: 100px; margin:10px; border: black dashed thin; position: relative;}
+.SimilContainerConMarco{display: flex; min-height: 100px; margin:10px; border: gray solid thin;}
+.SimilContainerSinMarco{display: flex; min-height: 20px; margin:10px; font-size: 70%;}
+.Elemento{width: 11%; min-width: 30px; text-align: center; border: black dashed thin; margin:0.2rem; padding: 0.3rem 0.1px; background-color: rgb(153, 153, 221);}
+.ElementoOculto{width: 11%; min-width: 30px; margin:0.3rem;}
+.Espacio11{width: 11%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
+.Espacio16{width: 16%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
+.Espacio32{width: 32%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
+
+/* Ejemplos Específicos */
+.CSS20_Marg_Gr{background-color: lightgreen; color:grey; font-size:70%; padding-bottom: 2%; min-width:150px;}
+.CSS20_Marg_Bo{background-color: black; color:gray; text-align: right; margin: 0% 6% 0% 6%; padding: 0% 3% 3%; min-width:120px;}
+.CSS20_Marg_Me{background-color: pink; color:gray; padding: 6% 6% 0% 6%; min-width:100px}
+.CSS20_Marg_Ch{background-color: lightblue; color:black; font-size:200%; margin: 6% 6% 0% 6%; padding: 0%; text-align: center; min-width:80px}
+.CSS20_AnchoPadding{margin-left: 10%; width: 4%; vertical-align: middle;}
+
+.ejCSS1001,.ejCSS1002{margin: 0.4rem;}
+.ejCSS2001{margin: 0.4rem 0; color:gray}
+.ejCSS2001>div{min-width: 100px; margin: 0 0 0 0.1rem} 
+.ejCSS3001{justify-content:flex-start; align-items:flex-start;}
+.ejCSS3002{justify-content:flex-end; align-items:center;}
+.ejCSS3003{justify-content:space-between; align-items:flex-end;}
+.ejCSS3004{justify-content:space-around; align-items:baseline;}
+.ejCSS3004 div:nth-child(1){font-size: 50%;}
+.ejCSS3004 div:nth-child(2){font-size: 250%;}
+.ejCSS3005{justify-content:space-evenly; align-items:stretch;}
+.ejCSS3006{justify-content:flex-start; align-items:flex-start;}
+.ejCSS3006 div:nth-child(2){align-self: flex-end;}
+.ejCSS3301{justify-content:flex-start; align-items:flex-start; flex-flow:row nowrap;}
+.ejCSS3302{justify-content:flex-start; align-items:flex-start; flex-flow:row-reverse nowrap;}
+.ejCSS3303{justify-content:flex-start; align-items:flex-start; flex-flow:column nowrap;}
+.ejCSS3304{justify-content:flex-start; align-items:flex-start; flex-flow:column-reverse nowrap;}
+.ejCSS3305{justify-content:flex-start; align-items:flex-start; flex-flow:row wrap;}
+.ejCSS3306{justify-content:flex-start; align-items:flex-start; flex-flow:row wrap-reverse;}
+.ejCSS3307{justify-content:flex-start; align-items:flex-start; flex-flow:row-reverse wrap-reverse;}
+.ejCSS3308{justify-content:flex-start; align-items:flex-start; flex-flow:column wrap; height:160px ;}
+.ejCSS40{justify-content:flex-start; align-items:flex-start; flex-flow:row nowrap;}
+.ejCSS400101{position:sticky; top:0;}
+.ejCSS400102{position:sticky; top:10vh;}
+.ejCSS400201{position:absolute; left: -1px; top:-1px; opacity: 0;}
+.ejCSS400202{position:absolute; left: -40px; top:20px; opacity: 0;}
+.ejCSS4002:hover .Elemento{opacity: 1;}
+.ejCSS400301{position:fixed; left: -1px; top:-1px; opacity: 0;}
+.ejCSS400302{position:fixed; left: 45vw; top:45vh; opacity: 0;}
+.ejCSS4003:hover .Elemento{opacity: 1;}
+.ejCSS400401{position:relative; left: 10px;}
+.ejCSS400402{position:relative; left: -20px; top:10px}
+
+
+

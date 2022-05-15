@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp">
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css">
+</head>
+
+<body>
+    <header>
+        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Compilado de Instrucciones CSS de Flex-box: Flex-Direction, Flex-Wrap y Flex-Flow</h2>
+    </header>
+    <main>
+        <!-- Explicaciones -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <p class="CSS_Propiedad">flex-direction:</p>
+                <ul>
+                    <li><span class="CSS_Value">row</span>: Alinea elementos a la parte izquierda del contenedor
+                    </li>
+                    <li><span class="CSS_Value">row-reverse</span>: Alinea elementos a la parte derecha del contenedor</li>
+                    <li><span class="CSS_Value">column</span>: Distribuye horizontalmente los elementos dentro del contenedor (sin espacio a izquierda ni a derecha del grupo)</li>
+                    <li><span class="CSS_Value">column-reverse</span>: Distribuye horizontalmente los elementos dentro del contenedor (asignando un margen izq. y der. a cada elemento)</li>
+                </ul>
+                <a href="https://www.w3schools.com/css/css3_flexbox_container.asp#flex-direction" target="_blank">Mas sobre Flex-Direction...</a><br><br>
+            </div>
+            <div class="DosCols_50">
+                <p class="CSS_Propiedad">flex-wrap:</p>
+                <ul>
+                    <li><span class="CSS_Value">no-wrap</span>: Cada elemento se ajusta en una sola línea</li>
+                    <li><span class="CSS_Value">wrap</span>: Los elementos pasan a la próxima línea</li>
+                    <li><span class="CSS_Value">wrap-reverse</span>: Los elementos pasan a la próxima línea en reversa</li>
+                </ul>
+                <p class="CSS_Propiedad">flex-flow</span>:<span class="CSS_Value"> &ltflex-direction&gt &ltflex-wrap&gt</span></p>
+                <a href="https://www.w3schools.com/css/css3_flexbox_container.asp#flex-wrap" target="_blank">Mas sobre Flex-Wrap y Flex-Flow...</a><br><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Ejemplos -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <h3>Ej.1: <span class="CSS_Propiedad">flex-direction</span>:<span class="CSS_Value">row</span> + <span
+                        class="CSS_Propiedad">flex-wrap</span>:<span class="CSS_Value">no-wrap</span></h3>
+                <div class="SimilContainerConMarco ejCSS3301">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <h3>Ej.2: <span class="CSS_Propiedad">flex-direction</span>:<span class="CSS_Value">row-reverse</span> + <span
+                        class="CSS_Propiedad">flex-wrap</span>:<span class="CSS_Value">no-wrap</span></h3>
+                <div class="SimilContainerConMarco ejCSS3302">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <h3>Ej.3: <span class="CSS_Propiedad">flex-direction</span>:<span class="CSS_Value">column</span> y <span
+                        class="CSS_Propiedad">flex-wrap</span>:<span class="CSS_Value">no-wrap</span></h3>
+                <div class="SimilContainerConMarco ejCSS3303">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+                <h3>Ej.4: <span class="CSS_Propiedad">flex-direction</span>:<span class="CSS_Value">column-reverse</span> y
+                    <span class="CSS_Propiedad">flex-wrap</span>:<span class="CSS_Value">no-wrap</span>
+                </h3>
+                <div class="SimilContainerConMarco ejCSS3304">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                </div>
+            </div>
+            <div class="DosCols_50">
+                <h3>Ej.5: <span class="CSS_Propiedad">flex-direction</span>:<span class="CSS_Value">row</span> + <span
+                        class="CSS_Propiedad">flex-wrap</span>:<span class="CSS_Value">wrap</span></h3>
+                <div class="SimilContainerConMarco ejCSS3305">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                    <div class="Elemento">D1</div>
+                    <div class="Elemento">E1</div>
+                    <div class="Elemento">F1</div>
+                    <div class="Elemento">G1</div>
+                    <div class="Elemento">H1</div>
+                    <div class="Elemento">I1</div>
+                </div>
+                <h3>Ej.6: <span class="CSS_Propiedad">flex-direction</span>:<span class="CSS_Value">row</span> + <span
+                        class="CSS_Propiedad">flex-wrap</span>:<span class="CSS_Value">wrap-reverse</span></h3>
+                <div class="SimilContainerConMarco ejCSS3306">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                    <div class="Elemento">D1</div>
+                    <div class="Elemento">E1</div>
+                    <div class="Elemento">F1</div>
+                    <div class="Elemento">G1</div>
+                    <div class="Elemento">H1</div>
+                    <div class="Elemento">I1</div>
+                </div>
+                <h3>Ej.7: <span class="CSS_Propiedad">flex-flow</span>:<span class="CSS_Value">row-reverse wrap-reverse</span>
+                </h3>
+                <div class="SimilContainerConMarco ejCSS3307">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                    <div class="Elemento">D1</div>
+                    <div class="Elemento">E1</div>
+                    <div class="Elemento">F1</div>
+                    <div class="Elemento">G1</div>
+                    <div class="Elemento">H1</div>
+                    <div class="Elemento">I1</div>
+                </div>
+                <h3>Ej.8: <span class="CSS_Propiedad">flex-flow</span>:<span class="CSS_Value">column wrap</span></h3>
+                <div class="SimilContainerConMarco ejCSS3308">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento">C1</div>
+                    <div class="Elemento">D1</div>
+                    <div class="Elemento">E1</div>
+                    <div class="Elemento">F1</div>
+                    <div class="Elemento">G1</div>
+                    <div class="Elemento">H1</div>
+                    <div class="Elemento">I1</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

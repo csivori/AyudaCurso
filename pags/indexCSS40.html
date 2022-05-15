@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp">
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css">
+</head>
+
+<body>
+    <header>
+        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Compilado de Instrucciones CSS de Posicionamiento</h2>
+    </header>
+    <main>
+        <!-- Explicaciones -->
+        <div class="UnaColP">
+            <p>La propiedad <span class="CSS_Propiedad">position</span> sirve definir la posición del elemento. Los
+                valores posibles son:</p>
+            <ul>
+                <li><span class="CSS_Value">static</span>: [Default] Los elementos se muestran en orden según como van
+                    apareciendo en el HTML. Los atributos <span class="CSS_Propiedad">top</span>, <span
+                        class="CSS_Propiedad">right</span>, <span class="CSS_Propiedad">bottom</span>, ni <span
+                        class="CSS_Propiedad">left</span> no aplican.</li>
+                <li><span class="CSS_Value">relative</span>: El elemento se posiciona relativo a su posición <span
+                        class="CSS_Value">static</span>, por ej <span class="CSS_Propiedad">left</span>:<span
+                        class="CSS_Value">20px</span> agregará 20px a su posición <span class="CSS_Value">static</span>
+                </li>
+                <li><span class="CSS_Value">absolute</span>: El elemento se posiciona relativo a la posición de su
+                    primer elemento antecesor que no sea <span class="CSS_Value">static</span></li>
+                <li><span class="CSS_Value">fixed</span>: El elemento se posiciona relativo a la ventana del Browser
+                </li>
+                <li><span class="CSS_Value">sticky</span>: El elemento se posiciona relativo a la posición de la barra
+                    de scroll de la ventana. Un elemento <span class="CSS_Value">sticky</span> alterna entre el
+                    posicionamiento <span class="CSS_Value">relative</span> y el <span class="CSS_Value">fixed</span>.
+                    Solo está soportado desde IE/Edge 15 y en Safari desde la v6.1 usando el prefijo -webkit-.</li>
+            </ul>
+            <a href="https://www.w3schools.com/cssref/pr_class_position.asp" target="_blank">Mas sobre
+                Position...</a><br><br>
+        </div>
+    </main>
+    <footer>
+        <!-- Ejemplos -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <h3>Ej.1: <span class="CSS_Propiedad">position</span>: A1, B1, E1 y F1 <span
+                    class="CSS_Value">static</span> /
+                C1 <span class="CSS_Value">sticky</span> con <span class="CSS_Propiedad">top</span>:<span
+                    class="CSS_Value">0</span> / D1 <span class="CSS_Value">sticky</span> con <span
+                    class="CSS_Propiedad">top</span>:<span class="CSS_Value">10vh</span>. <span
+                    class="CSS_TxtComun">(Achicar la ventana del browser y probar scroll up & down para ver el efecto en los elementos C1 y D1. Cuando A1, B1 salgan de la vista, C1 y D1 se fijaran a sus márgen <span class="CSS_Propiedad">top</span> definido)</span></h3>
+            <div class="SimilBrowserConMarco ejCSS40 ejCSS4001">
+                <div class="SimilContainerConMarco ejCSS40">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento ejCSS400101">C1</div>
+                    <div class="Elemento ejCSS400102">D1</div>
+                    <div class="Elemento">E1</div>
+                    <div class="Elemento">F1</div>
+                </div>
+            </div>
+                <h3>Ej.2: <span class="CSS_Propiedad">position</span>: A1, B1, E1 y F1 <span
+                        class="CSS_Value">static</span> /
+                    C1 <span class="CSS_Value">absolute</span> con <span class="CSS_Propiedad">left</span>:<span
+                        class="CSS_Value">0px</span> y <span class="CSS_Propiedad">top</span>:<span
+                        class="CSS_Value">0px</span> / D1 <span class="CSS_Value">absolute</span> con <span
+                        class="CSS_Propiedad">left</span>:<span class="CSS_Value">-20px</span> y <span
+                        class="CSS_Propiedad">top</span>:<span class="CSS_Value">20px</span>. <span
+                        class="CSS_TxtComun">(Pasar el mouse sobre el ejemplo para ver la posición de los elementos C1 y
+                        D1)</span></h3>
+                <div class="SimilBrowserConMarco ejCSS40 ejCSS4002">
+                    <div class="SimilContainerConMarco ejCSS40">
+                        <div class="Elemento">A1</div>
+                        <div class="Elemento">B1</div>
+                        <div class="Elemento ejCSS400201">C1</div>
+                        <div class="Elemento ejCSS400202">D1</div>
+                        <div class="Elemento">E1</div>
+                        <div class="Elemento">F1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="DosCols_50">
+                <h3>Ej.3: <span class="CSS_Propiedad">position</span>: A1, B1, E1 y F1 <span
+                        class="CSS_Value">static</span> /
+                    C1 <span class="CSS_Value">fixed</span> con <span class="CSS_Propiedad">left</span>:<span
+                        class="CSS_Value">0px</span> y <span class="CSS_Propiedad">top</span>:<span
+                        class="CSS_Value">0px</span> / D1 <span class="CSS_Value">fixed</span> con <span
+                        class="CSS_Propiedad">left</span>:<span class="CSS_Value">45vw</span> y <span
+                        class="CSS_Propiedad">top</span>:<span class="CSS_Value">45vh</span>. <span
+                        class="CSS_TxtComun">(Pasar el mouse sobre el ejemplo para ver la posición de los elementos C1
+                        <span class="CSS_TxtComun80">[arriba a la izquierda]</span> y
+                        D1 <span class="CSS_TxtComun80">[centro de la pantalla]</span>)</span></h3>
+                <div class="SimilBrowserConMarco ejCSS40 ejCSS4003">
+                    <div class="SimilContainerConMarco ejCSS40">
+                        <div class="Elemento">A1</div>
+                        <div class="Elemento">B1</div>
+                        <div class="Elemento ejCSS400301">C1</div>
+                        <div class="Elemento ejCSS400302">D1</div>
+                        <div class="Elemento">E1</div>
+                        <div class="Elemento">F1</div>
+                    </div>
+                </div>
+                <h3>Ej.4: <span class="CSS_Propiedad">position</span>: A1, B1, E1 y F1 <span
+                    class="CSS_Value">static</span>
+                /
+                C1 <span class="CSS_Value">relative</span> con <span class="CSS_Propiedad">left</span>:<span
+                    class="CSS_Value">10px</span> / D1 <span class="CSS_Value">relative</span> con <span
+                    class="CSS_Propiedad">left</span>:<span class="CSS_Value">-20px</span> y <span
+                    class="CSS_Propiedad">top</span>:<span class="CSS_Value">10px</span></h3>
+            <div class="SimilBrowserConMarco ejCSS40">
+                <div class="SimilContainerConMarco ejCSS40">
+                    <div class="Elemento">A1</div>
+                    <div class="Elemento">B1</div>
+                    <div class="Elemento ejCSS400401">C1</div>
+                    <div class="Elemento ejCSS400402">D1</div>
+                    <div class="Elemento">E1</div>
+                    <div class="Elemento">F1</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

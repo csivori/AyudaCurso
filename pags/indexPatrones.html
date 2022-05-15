@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp">
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
+        <h2>Compilado de Patrones de Diseño</h2>
+    </header>
+    <main>
+        <!-- Explicaciones -->
+        <div class="UnaColP">
+            <embed class="ejPatrones" src="../ejemplos/Patrones de Diseño.pdf" type="application/pdf"></embed>
+        </div>
+    </main>
+    <footer>
+        <!-- Ejemplos -->
+        <div class="DosColsP">
+            <div class="DosCols_50">
+                <h3>Ej.1: Tiny Tweaks: <span class="CSS_TxtComun80">Es el patrón más simple y sencillo de implementar de
+                        todos. Se basa en una sóla columna para el contenido</span></h3>
+                <div class="ejPatronesP">
+                    <div class="Scr ejPatronesCelular">
+                        <span class="CSS_TxtComun80">Celular (600px)</span>
+                        <div class="ejPatrones0101Txt">COL1</div>
+                    </div>
+                    <div class="Scr ejPatronesTablet">
+                        <span class="CSS_TxtComun80">Tablet (800px)</span>
+                        <div class="ejPatrones0102Txt">COL1</div>
+                    </div>
+                    <div class="Scr ejPatronesLaptop">
+                        <span class="CSS_TxtComun80">Laptop 14" (1024px)</span>
+                        <div class="ejPatrones0103Txt">COL1</div>
+                    </div>
+                    <div class="Scr ejPatronesMonitor">
+                        <span class="CSS_TxtComun80">Monitor (1200px)</span>
+                        <div class="ejPatrones0104Txt">COL1</div>
+                    </div>
+                </div>
+                <h3>Ej.2: Mostly Fluid: <span class="CSS_TxtComun80">Este patrón consiste en tener una grilla o Grid de
+                        tamaño flexible</span></h3>
+                <div class="ejPatronesP">
+                    <div class="Scr ejPatronesCelular">
+                        <span class="CSS_TxtComun60">Celular (600px)</span>
+                        <div class="ejPatrones0201 ejPatronesColor1">TOP</div>
+                        <div class="ejPatrones0201 ejPatronesColor2">COL1</div>
+                        <div class="ejPatrones0201 ejPatronesColor3">COL2</div>
+                    </div>
+                    <div class="Scr ejPatronesTablet">
+                        <span class="CSS_TxtComun60">Tablet (800px)</span>
+                        <div class="ejPatrones0202 ejPatronesColor1">TOP</div>
+                        <div class="ejPatronesP">
+                            <div class="ejPatrones0202 ejPatronesColor2 ejPatrones2Col">COL1</div>
+                            <div class="ejPatrones0202 ejPatronesColor3 ejPatrones2Col">COL2</div>
+                        </div>
+                    </div>
+                    <div class="Scr ejPatronesLaptop">
+                        <span class="CSS_TxtComun60">Laptop 14" (1024px)</span>
+                        <div class="ejPatrones0203 ejPatronesColor1">TOP</div>
+                        <div class="ejPatronesP">
+                            <div class="ejPatrones0203 ejPatronesColor2 ejPatrones2Col">COL1</div>
+                            <div class="ejPatrones0203 ejPatronesColor3 ejPatrones2Col">COL2</div>
+                        </div>
+                    </div>
+                    <div class="Scr ejPatronesMonitor">
+                        <span class="CSS_TxtComun60">Monitor (1200px)</span>
+                        <div class="ejPatrones0204 ejPatronesColor1">TOP</div>
+                        <div class="ejPatronesP">
+                            <div class="ejPatrones0204 ejPatronesColor2 ejPatrones2Col">COL1</div>
+                            <div class="ejPatrones0204 ejPatronesColor3 ejPatrones2Col">COL2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ejPatronesEspacioFinal"></div>
+                <h3>Ej.3: Column Drop: <span class="CSS_TxtComun80">Este patrón consiste en tener una grilla o Grid de
+                        tamaño flexible</span></h3>
+                <div class="ejPatronesP">
+                    <div class="Scr ejPatronesCelular">
+                        <span class="CSS_TxtComun60">Celular (600px)</span>
+                        <div class="ejPatrones0201 ejPatronesColor1">COL1</div>
+                        <div class="ejPatrones0201 ejPatronesColor2">COL2</div>
+                        <div class="ejPatrones0201 ejPatronesColor3">COL3</div>
+                    </div>
+                    <div class="Scr ejPatronesTablet">
+                        <span class="CSS_TxtComun60">Tablet (800px)</span>
+                        <div class="ejPatrones0302 ejPatronesColor1">COL1</div>
+                        <div class="ejPatrones0302 ejPatronesColor2">COL2</div>
+                        <div class="ejPatrones0302 ejPatronesColor3">COL3</div>
+                    </div>
+                    <div class="Scr ejPatronesLaptop">
+                        <span class="CSS_TxtComun60">Laptop 14" (1024px)</span>
+                        <div class="ejPatronesP">
+                            <section class="ejPatrones0303 ejPatronesColor1">COL1</section>
+                            <section class="ejPatrones0303 ejPatronesColor2">COL2</section>
+                        </div>
+                        <div class="ejPatrones0303 ejPatronesColor3">COL3</div>
+                    </div>
+                    <div class="Scr ejPatronesMonitor">
+                        <span class="CSS_TxtComun60">Monitor (1200px)</span>
+                        <div class="ejPatronesP">
+                            <section class="ejPatrones0304 ejPatronesColor1">COL1</section>
+                            <section class="ejPatrones0304 ejPatronesColor2">COL2</section>
+                            <section class="ejPatrones0304 ejPatronesColor3">COL3</section>
+                        </div>
+                    </div>
+                </div>
+                <div class="ejPatronesEspacioFinal"></div>
+            </div>
+            <div class="DosCols_50">
+                <h3>Ej.4: Layout Shifter: <span class="CSS_TxtComun80">Este es uno de los patrones más complejos.
+                        Consiste en mover los bloques de contenido cambiando totalmente el Layout, de ahí el nombre del
+                        patrón</span></h3>
+                <div class="ejPatronesP">
+                    <div class="Scr ejPatronesCelular">
+                        <span class="CSS_TxtComun60">Celular (600px)</span>
+                        <div class="ejPatrones0401 ejPatronesColor1">COL1</div>
+                        <div class="ejPatrones0401 ejPatronesColor2">COL2</div>
+                        <div class="ejPatrones0401 ejPatronesColor3">COL3</div>
+                    </div>
+                    <div class="Scr ejPatronesTablet">
+                        <span class="CSS_TxtComun60">Tablet (800px)</span>
+                        <div class="ejPatrones0402 ejPatronesColor1">COL1</div>
+                        <div class="ejPatrones0402 ejPatronesColor2">COL2</div>
+                        <div class="ejPatrones0402 ejPatronesColor3">COL3</div>
+                    </div>
+                    <div class="Scr ejPatronesLaptop">
+                        <span class="CSS_TxtComun60">Laptop 14" (1024px)</span>
+                        <div class="ejPatronesP">
+                            <section class="ejPatrones0403 ejPatronesColor1">COL1</section>
+                            <div class="ejPatrones0403P">
+                                <section class="ejPatrones0403 ejPatronesColor2">COL2</section>
+                                <section class="ejPatrones0403 ejPatronesColor3">COL3</section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Scr ejPatronesMonitor">
+                        <span class="CSS_TxtComun60">Monitor (1200px)</span>
+                        <div class="ejPatronesP">
+                            <section class="ejPatrones0404 ejPatronesColor1">COL1</section>
+                            <div class="ejPatrones0404P">
+                                <section class="ejPatrones0404 ejPatronesColor2">COL2</section>
+                                <section class="ejPatrones0404 ejPatronesColor3">COL3</section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ejPatronesEspacioFinal"></div>
+                <h3>Ej.5: Off Canvas: <span class="CSS_TxtComun80">Para el final he dejado el patrón más complejo de
+                        implementar pero uno de los más utilizados, sobre todo en aplicaciones móviles. Este patrón
+                        esconde contenido en la pantalla y únicamente es visible si realizamos un
+                        determinado gesto. Este contenido oculto normalmente es un menú de navegación. Cuando
+                        la pantalla es más ancha, este contenido se hace visible.
+                    </span></h3>
+                <div class="ejPatronesP">
+                    <div class="Scr ejPatronesCelular ejPatrones0501Scr">
+                        <span class="CSS_TxtComun60">Celular (600px)</span>
+                        <div class="ejPatrones0501P">
+                            <div class="ejPatrones0501 ejPatronesColor1">COL1</div>
+                            <div class="ejPatrones0501 ejPatronesColor2">COL2</div>
+                        </div>
+                    </div>
+                    <div class="Scr ejPatronesTablet">
+                        <span class="CSS_TxtComun60">Tablet (800px)</span>
+                        <div class="ejPatrones0501P">
+                            <div class="ejPatrones0502 ejPatronesColor1">COL1</div>
+                            <div class="ejPatrones0502 ejPatronesColor2">COL2</div>
+                        </div>
+                    </div>
+                    <div class="Scr ejPatronesLaptop">
+                        <span class="CSS_TxtComun60">Laptop 14" (1024px)</span>
+                        <div class="ejPatronesP">
+                            <section class="ejPatrones0403 ejPatronesColor1">COL1</section>
+                            <div class="ejPatrones0403P">
+                                <section class="ejPatrones0403 ejPatronesColor2">COL2</section>
+                                <section class="ejPatrones0403 ejPatronesColor3">COL3</section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Scr ejPatronesMonitor">
+                        <span class="CSS_TxtComun60">Monitor (1200px)</span>
+                        <div class="ejPatronesP">
+                            <section class="ejPatrones0404 ejPatronesColor1">COL1</section>
+                            <div class="ejPatrones0404P">
+                                <section class="ejPatrones0404 ejPatronesColor2">COL2</section>
+                                <section class="ejPatrones0404 ejPatronesColor3">COL3</section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ejPatronesEspacioFinal"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
