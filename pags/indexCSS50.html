@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="./img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>
+        Compilado de Instrucciones CSS de Grid: Grid-Template-Rows,
+        Grid-Template-Columns, Align-Items y Align-Self
+      </h2>
+    </header>
+    <main>
+      <!-- Explicaciones -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <div class="ejCSS5000">
+            <div class="ejCSS500001"> </div>
+            <div class="ejCSS500002"><span class="CSS_Propiedad">grid-template-columns</span>:<span class="CSS_Value">5</span></div>
+            <div class="ejCSS500002X"> </div>
+            <div class="ejCSS500003"><span class="CSS_Propiedad">grid-template-rows</span>:<span class="CSS_Value">4</span></div>
+            <div class="ejCSS500003Y"></div>
+            <div class="ejCSS500004">
+              <div class="ejCSS50000Cell ejCSS50000CellBordeB">Celda1</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeBL">Celda2</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeBL">Celda3</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeBL">Celda4</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeBL">Celda5</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeB">Celda6</div>
+              <div class="ejCSS50000Cell7">
+                <div class="ejCSS50000Cell701">
+                  <div class="ejCSS50000Cell701Prop"><span class="CSS_Propiedad">grid-row</span>:<span class="CSS_Value">2/4</span></div>
+                  <div class="ejCSS50000Cell701Y"></div>
+                  <div class="ejCSS50000Cell701Txt">Celda7</div>
+                </div>
+              </div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeBL">Celda8</div>
+              <div class="ejCSS50000Cell9">
+                <div class="ejCSS50000Cell901">
+                  <div class="ejCSS50000Cell901Prop"><span class="CSS_Propiedad">grid-column</span>:<span class="CSS_Value">4/5</span></div>
+                  <div class="ejCSS50000Cell901X"></div>
+                  <div class="ejCSS50000Cell901Txt">Celda9</div>
+                </div>
+              </div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeB">Celda10</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeBL">Celda11</div>
+              <div class="ejCSS50000Cell">Celda12</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeL">Celda13</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeL">Celda14</div>
+              <div class="ejCSS50000Cell ejCSS50000CellBordeL">Celda15</div>
+            </div>
+          </div>
+        </div>
+        <div class="DosCols_50">
+          <h4>Para definir la Grilla:</h4>
+          <p class="CSS_Propiedad">grid-template-columns / grid-template-rows:</p>
+          <ul>
+            <li>
+              <span class="CSS_Value">3fr 6fr 2fr 3fr</span>: Define 4 columnas o filas dentro contenedor con estas proporciones.
+            </li>
+            <li>
+              <span class="CSS_Value">repeat(5, 1fr)</span>: Define 5 columnas o filas dentro contenedor de iguales proporciones.
+            </li>
+          </ul>
+          <h4>Para definir las Celdas:</h4>
+          <p class="CSS_Propiedad">grid-column / grid-row:</p>
+          <ul>
+            <li>
+              <span class="CSS_Value">2/4</span>: Define que esta celda combinará las columnas o filas desde la "2" hasta la "4" (2,3 y 4 como una sola celda).
+            </li>
+            <li>
+              <span class="CSS_Value">2 / span 3</span>: Define que esta celda combinará las columnas o filas desde la "2" con "3" de extensión (2,3 y 4 como una sola celda).
+            </li>
+          </ul>
+          <a
+            href="https://www.w3schools.com/cssref/pr_grid.asp"
+            target="_blank"
+            >Mas sobre Grid...</a
+          ><br /><br />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <h3>
+            Ej.1: <span class="CSS_Propiedad">grid-template-rows</span>:<span
+              class="CSS_Value"
+              >repeat(3, 1fr)</span
+            >
+            + <span class="CSS_Propiedad">grid-template-columns</span>:<span
+              class="CSS_Value"
+              >repeat(5, 1fr)</span
+            >
+          </h3>
+          <div class="GridContainerConMarco ejCSS5001">
+            <div class="Elemento">A1</div>
+            <div class="Elemento">B1</div>
+            <div class="Elemento">C1</div>
+            <div class="Elemento">D1</div>
+            <div class="Elemento">E1</div>
+            <div class="Elemento">F1</div>
+            <div class="Elemento">G1</div>
+          </div>
+          <h3>
+            Ej.2: C1 <span class="CSS_Propiedad">grid-rows</span>:<span
+              class="CSS_Value">1/2</span>
+            + <span class="CSS_Propiedad">grid-columns</span>:<span
+              class="CSS_Value">3/4</span>
+          </h3>
+          <div class="GridContainerConMarco ejCSS5002">
+            <div class="GridElemento">A1</div>
+            <div class="GridElemento">B1</div>
+            <div class="GridElemento ejCSS500201">C1</div>
+            <div class="GridElemento">D1</div>
+            <div class="GridElemento">E1</div>
+            <div class="GridElemento">F1</div>
+            <div class="GridElemento">G1</div>
+          </div>
+        </div>
+        <div class="DosCols_50">
+          <h3>Ej.3: Ejemplo de Layout:</h3>
+          <div class="ejCSS5003Titulo">
+            <div>NavBar</div>
+            <div><span class="CSS_Propiedad">grid-column</span>:<span class="CSS_Value">1/5</span></div>
+            <div>L-Side:</div>
+            <div><span class="CSS_Propiedad">grid-row</span>:<span class="CSS_Value">2/4</span></div>
+            <div>Main:</div>
+            <div><span class="CSS_Propiedad">grid-row</span>:<span class="CSS_Value">2/3</span>
+            + <span class="CSS_Propiedad">grid-column</span>:<span class="CSS_Value">2/5</span></div>
+            <div>Up-R-Side:</div>
+            <div> <span class="CSS_Propiedad">grid-row</span>:<span class="CSS_Value">2/3</span></div>
+            <div>Down-R-Side:</div>
+            <div>-</div>
+            <div>Footer:</div>
+            <div> <span class="CSS_Propiedad">grid-column</span>:<span class="CSS_Value">1/5</span></div>
+          </div>        
+          <div class="GridContainerConMarco ejCSS5003">
+            <div class="GridElemento ejCSS500301">NavBar</div>
+            <div class="GridElemento ejCSS500302">L-Side</div>
+            <div class="GridElemento ejCSS500303">Main</div>
+            <div class="GridElemento ejCSS500304">Up-R-Side</div>
+            <div class="GridElemento">Down-R-Side</div>
+            <div class="GridElemento ejCSS500306">Footer</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

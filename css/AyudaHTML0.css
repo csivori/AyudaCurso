@@ -5,17 +5,28 @@
 /* .DosCols2{background-color: lightcoral;} */
 /* Fin a Borrar */
 
+:root{
+    --ColorTag:rgba(255, 128, 128, 0.8);
+    --ColorPropiedad:rgb(39, 168, 248);
+    --ColorValue:darkorange;
+    --ColorComentariado:rgb(128, 128, 128);
+    --ColorTxt:rgb(25, 25, 25);
+    --ColorSombraFrames:rgba(83,78,76,0.5);
+    --ColorElemento:rgb(153, 153, 221);
+    --ColorSombraElemento:rgb(230, 230, 247);
+}
+
 /* Tag para marcar etiquetas y valores predeterminados */
-.CSS_Tag{font-style: italic; font-weight: bold; color: rgba(255, 128, 128, 0.8)}
-.CSS_Propiedad{font-style: italic; font-weight: bold; color:rgb(39, 168, 248)}
-.CSS_Value{font-style: italic; font-weight:normal; color: darkorange}
-.CSS_Comentariado{font-style: normal; font-weight:normal; font-size: 80%; color: rgb(128, 128, 128)}
-.CSS_TxtComun{font-style:normal; font-weight:normal; color:rgb(25, 25, 25)}
-.CSS_TxtComun80{font-style:normal; font-weight:normal; color:rgb(25, 25, 25); font-size: 80%;}
-.CSS_TxtComun60{font-style:normal; font-weight:normal; color:rgb(25, 25, 25); font-size: 60%;}
+.CSS_Tag{font-style:italic; font-weight: bold; color:var(--ColorTag);}
+.CSS_Propiedad{font-style:italic; font-weight: bold; color:var(--ColorPropiedad);}
+.CSS_Value{font-style:italic; font-weight:normal; color:var(--ColorValue);}
+.CSS_Comentariado{font-style:normal; font-weight:normal; font-size:80%; color:var(--ColorComentariado);}
+.CSS_TxtComun{font-style:normal; font-weight:normal; color:var(--ColorTxt);}
+.CSS_TxtComun80{font-style:normal; font-weight:normal; color:var(--ColorTxt); font-size: 80%;}
+.CSS_TxtComun60{font-style:normal; font-weight:normal; color:var(--ColorTxt); font-size: 60%;}
 
 /* Tag para estructura Título, Tags o Propiedades, Ejemplos */
-header, main, footer{background:white; box-shadow: 0 0 1rem rgba(83,78,76,0.5); margin:0.5rem; padding: 5px;min-width: 30rem;}
+header, main, footer{background:white; box-shadow: 0 0 1rem var(--ColorSombraFrames); margin:0.5rem; padding: 5px;min-width: 30rem;}
 header{display: flex;}
 h2{width: 100%; text-align: center;}
 tr td:nth-child(1){column-width: 160px;}
@@ -76,10 +87,19 @@ tr td:nth-child(1){column-width: 160px;}
 .h50{height: 50%;}
 .h100{height: 100%;}
 .Scr{min-height: 60px; margin:10px; border: gray solid thick;}
+/* INICIO: Hay que Reemplazar Simil... x Flex... */
 .SimilBrowserConMarco{display: flex; min-height: 100px; margin:10px; border: black dashed thin; position: relative;}
 .SimilContainerConMarco{display: flex; min-height: 100px; margin:10px; border: gray solid thin;}
 .SimilContainerSinMarco{display: flex; min-height: 20px; margin:10px; font-size: 70%;}
-.Elemento{width: 11%; min-width: 30px; text-align: center; border: black dashed thin; margin:0.2rem; padding: 0.3rem 0.1px; background-color: rgb(153, 153, 221);}
+/* FIN: Hay que Reemplazar Simil... x Flex... */
+.FlexBrowserConMarco{display: flex; min-height: 100px; margin:10px; border: black dashed thin; position: relative;}
+.FlexContainerConMarco{display: flex; min-height: 100px; margin:10px; border: gray solid thin;}
+.FlexContainerSinMarco{display: flex; min-height: 20px; margin:10px; font-size: 70%;}
+.GridBrowserConMarco{display: grid; min-height: 100px; margin:10px; border: black dashed thin; position: relative;}
+.GridContainerConMarco{display: grid; min-height: 100px; margin:10px; padding: 10px; border: gray solid thin;}
+.GridContainerSinMarco{display: grid; min-height: 20px; margin:10px; font-size: 70%;}
+.Elemento{width: 11%; min-width: 30px; text-align: center; border: black dashed thin; margin:0.2rem; padding: 0.3rem 0.1px; background-color:var(--ColorElemento);}
+.GridElemento{display: inline-grid; width: 100%; min-width: 30px; text-align: center; border: black dashed thin; margin:0.2rem; padding: 0.3rem 0.1px; background-color:var(--ColorElemento);}
 .ElementoOculto{width: 11%; min-width: 30px; margin:0.3rem;}
 .Espacio11{width: 11%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
 .Espacio16{width: 16%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
@@ -122,7 +142,39 @@ tr td:nth-child(1){column-width: 160px;}
 .ejCSS400302{position:fixed; left: 45vw; top:45vh; opacity: 0;}
 .ejCSS4003:hover .Elemento{opacity: 1;}
 .ejCSS400401{position:relative; left: 10px;}
-.ejCSS400402{position:relative; left: -20px; top:10px}
+.ejCSS400402{position:relative; left: -20px; top:10px;}
+.ejCSS5000{display:grid; grid-template-columns: 3fr 1fr 100fr; grid-template-rows: 4fr 2fr 70fr; margin: 0px 10%; text-align: center;}
+.ejCSS500001{grid-row: 1/ span 2; grid-column: 1/ span 2;}
+.ejCSS500002{grid-column: 3/ span 1; }
+.ejCSS500002X{grid-column: 3/ span 1; border-top: solid var(--ColorPropiedad) 1px;}
+.ejCSS500003{grid-row: 3/ span 1; writing-mode: vertical-lr; transform: rotate(180deg);}
+.ejCSS500003Y{grid-row: 3/ span 1; border-left: solid var(--ColorPropiedad) 1px;}
+.ejCSS500004{display:grid; grid-template-columns:repeat(5,1fr); grid-template-rows:repeat(4,1fr); margin: 0px; border: dotted gray 1px;}
+.ejCSS50000Cell{background-color:var(--ColorElemento); padding: 15% 0;}
+.ejCSS50000CellBordeB{border-bottom: dotted gray 1px;}
+.ejCSS50000CellBordeL{border-left: dotted gray 1px;}
+.ejCSS50000CellBordeBL{border-bottom: dotted gray 1px; border-left: dotted gray 1px;}
+.ejCSS50000Cell7{background-color:var(--ColorElemento); grid-column: 2/ span 1; grid-row: 2/5; border-left: dotted gray 1px;}
+.ejCSS50000Cell701{display:grid; height:100%; grid-template-columns: 10fr 3fr 50fr; grid-template-rows: 100fr}
+.ejCSS50000Cell701Prop{background-color:var(--ColorSombraElemento); writing-mode: vertical-lr; transform: rotate(180deg);}
+.ejCSS50000Cell701Y{background-color:var(--ColorSombraElemento); border-left: solid var(--ColorPropiedad) 1px;}
+.ejCSS50000Cell701Txt{padding: 100% 0%;}
+.ejCSS50000Cell9{background-color:var(--ColorElemento); grid-row: 2/ span 2; grid-column: 4/ span 2;border-bottom: dotted gray 1px; border-left: dotted gray 1px;}
+.ejCSS50000Cell901{display:grid; grid-template-columns: 1fr; grid-template-rows: 2fr 1fr 12fr;}
+.ejCSS50000Cell901Prop{background-color:var(--ColorSombraElemento);}
+.ejCSS50000Cell901X{background-color:var(--ColorSombraElemento); border-top: solid var(--ColorPropiedad) 1px;}
+.ejCSS50000Cell901Txt{padding: 30px 0;}
+.ejCSS5001{grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, 1fr);} 
+.ejCSS5002{grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, 1fr);} 
+.ejCSS500201{grid-column: 3/ span 2; grid-row: 1/ span 2;} 
+.ejCSS5003{grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(5, 1fr);} 
+.ejCSS5003Titulo{display:grid; grid-template-columns: 3fr 6fr 2fr 3fr; grid-template-rows: repeat(3, 1fr)}
+.ejCSS500301{grid-column: 1/ span 5;}
+.ejCSS500302{grid-row: 2/ span 3;}
+.ejCSS500303{grid-row: 2/ span 3; grid-column: 2/ span 3;}
+.ejCSS500304{grid-row: 2/ span 2;}
+.ejCSS500306{grid-column: 1/ span 5;}
+
 
 .ejSQLcmd{width: 100%;height: 50vh;}
 .ejSQLcheatsheet{width: 100%;height: 80vh;}

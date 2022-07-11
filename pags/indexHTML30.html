@@ -1,55 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
-    <link rel="icon" href="./img/AyudaHTML.bmp">
-    <link rel="STYLESHEET" href="../css/estilos.css">
-</head>
+    <link rel="icon" href="./img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
-        <h2>Compilado de Instrucciones HTML de Listas con Viñetas (Bullet / Numeradas)</h2>
-        <br>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>Compilado de Instrucciones HTML de Listas con y sin Viñetas</h2>
     </header>
     <main>
-        <h3>ol: Lista Ordenada + li: Linea de una Lista</h3>
-        <ol start="3">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li type="I">Item 5</li>
-            <li type="I">Item 6</li>
-            <li type="a">Item 7</li>
-            <li type="a">Item 8</li>
-        </ol>
-
-        <h3>ul: Lista con Viñetas + li: Linea de una Lista</h3>
-        <ul>
-            <li>Item a</li>
-            <li>Item D</li>
-            <li type="circle">Item W</li>
-            <li type="circle">Item S</li>
-            <li type="square">Item X</li>
-            <li type="square">Item Sa</li>
-            <li type="disc">Item ggg</li>
-            <li type="disc">Item q</li>
-        </ul>
-
-        <h3>ul: Lista con Viñetas + li: Linea de una Lista + img: Imagen</h3>
-        <ul>
-            <li>Entrada: <img src="../img/sopa.jfif" alt="sopa"> Sopa</li>
-            <li>Plato Principal: <img src="../img/burger.jfif" alt="mila"> Hamburguesa Completa</li>
-        </ul>
+      <!-- Explicaciones -->
+      <div class="TresColsP">
+        <div class="TresCols_33">
+          <dl>
+            <dt>
+              <h3>
+                <span class="CSS_Tag">&lt;dl&gt;</span> Lista de Descripción
+                (Identada)
+              </h3>
+            </dt>
+            <dd>
+              <p><span class="CSS_Tag">&lt;dt&gt;</span> Define el Item</p>
+            </dd>
+            <dd>
+              <p><span class="CSS_Tag">&lt;dd&gt;</span> Describe el Item</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="TresCols_25">
+          <dl>
+            <dt>
+              <h3><span class="CSS_Tag">&lt;ol&gt;</span> Lista Ordenada</h3>
+            </dt>
+            <dd>
+              <p><span class="CSS_Tag">&lt;li&gt;</span> Item</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="TresCols_25">
+          <dl>
+            <dt>
+              <h3><span class="CSS_Tag">&lt;ul&gt;</span> Lista Desordenada</h3>
+            </dt>
+            <dd>
+              <p><span class="CSS_Tag">&lt;li&gt;</span> Item</p>
+            </dd>
+          </dl>
+        </div>
+      </div>
     </main>
     <footer>
-
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <h3>Ej.1: <span class="CSS_Tag">&lt;ol&gt;</span> Lista Ordenada</h3>
+          <div class="SimilContainerSinMarco">
+            <div class="w25">
+              <h4>con Viñeta Std</h4>
+              <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>
+            </div>
+            <div class="w25">
+              <h4>
+                con Viñeta (<span class="CSS_Propiedad">start</span>:<span
+                  class="CSS_Value"
+                  >5</span
+                >)
+              </h4>
+              <ol start="5">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>
+            </div>
+            <div class="w25">
+              <h4>
+                Viñeta Romana (<span class="CSS_Propiedad">type</span>:<span
+                  class="CSS_Value"
+                  >I</span
+                >)
+              </h4>
+              <ol start="5">
+                <li type="I">Item 5</li>
+                <li type="I">Item 6</li>
+                <li type="I">Item 7</li>
+                <li type="I">Item 8</li>
+              </ol>
+            </div>
+            <div class="w25">
+              <h4>
+                Viñeta Letras (<span class="CSS_Propiedad">type</span>:<span
+                  class="CSS_Value"
+                  >a</span
+                >)
+              </h4>
+              <ol start="25">
+                <li type="a">Item 25</li>
+                <li type="a">Item 26</li>
+                <li type="a">Item 27</li>
+                <li type="a">Item 28</li>
+              </ol>
+            </div>
+          </div>
+          <br />
+          <h3>
+            Ej.2: <span class="CSS_Tag">&lt;ul&gt;</span> Lista Desordenada
+          </h3>
+          <div class="SimilContainerSinMarco">
+            <div class="w25">
+              <h4>con Viñeta Std</h4>
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            </div>
+            <div class="w25">
+              <h4>
+                con Viñeta (<span class="CSS_Propiedad">type</span>:<span
+                  class="CSS_Value"
+                  >circle</span
+                >)
+              </h4>
+              <ul>
+                <li type="circle">Item 1</li>
+                <li type="circle">Item 2</li>
+                <li type="circle">Item 3</li>
+                <li type="circle">Item 4</li>
+              </ul>
+            </div>
+            <div class="w25">
+              <h4>
+                con Viñeta (<span class="CSS_Propiedad">type</span>:<span
+                  class="CSS_Value"
+                  >square</span
+                >)
+              </h4>
+              <ul>
+                <li type="square">Item 1</li>
+                <li type="square">Item 2</li>
+                <li type="square">Item 3</li>
+                <li type="square">Item 4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="DosCols_50">
+          <h3>
+            Ej.3: <span class="CSS_Tag">&lt;dl&gt;</span> Lista de Descripción
+          </h3>
+          <div>
+            <dl>
+              <dt>Items 1, 2 y 3</dt>
+              <dd>Item 1</dd>
+              <dd>Item 2</dd>
+              <dd>Item 3</dd>
+              <dt>Items 4 y 5</dt>
+              <dd>Item 4</dd>
+              <dd>Item 5</dd>
+            </dl>
+          </div>
+          <h3>Ej.4: <span class="CSS_Tag">&lt;ul&gt;</span> + <span class="CSS_Tag">&lt;img&gt;</span> Lista con Viñetas + Imagen</h3>
+          <div>
+            <ul>
+              <li>Entrada: <img src="../img/sopa.jfif" alt="sopa" width=15% class="va-m" /> Sopa</li>
+              <li>
+                Plato Principal:
+                <img src="../img/burger.jfif" alt="mila" width=15% class="va-m" /> Hamburguesa Completa
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
