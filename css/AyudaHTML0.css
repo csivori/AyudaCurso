@@ -30,6 +30,13 @@ tr td:nth-child(1){column-width: 160px;}
 .DosCols_50{width:49%; min-width: 30rem; padding: 0 0.3rem;}
 .DosCols_75{width:74%; min-width: 30rem; padding: 0 0.3rem;}
 
+/* Tag para estructura de las página con 2 Columnas */
+/* .DosColsP{display: grid; grid-template-columns: wrap;} */
+.TresColsP{display: flex; flex-flow: row wrap;}
+.TresCols_25{width:25%; min-width: 30rem; padding: 0 0.3rem;}
+.TresCols_33{width:33%; min-width: 30rem; padding: 0 0.3rem;}
+.TresCols_50{width:49%; min-width: 30rem; padding: 0 0.3rem;}
+
 /* Objetos Genéricos */
 .di-f{display: flex;}
 .di-b{display: block;}
