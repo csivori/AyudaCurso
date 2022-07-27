@@ -41,7 +41,7 @@ tr td:nth-child(1){column-width: 160px;}
 .DosCols_50{width:49%; min-width: 30rem; padding: 0 0.3rem;}
 .DosCols_75{width:74%; min-width: 30rem; padding: 0 0.3rem;}
 
-/* Tag para estructura de las página con 2 Columnas */
+/* Tag para estructura de las página con 3 Columnas */
 /* .DosColsP{display: grid; grid-template-columns: wrap;} */
 .TresColsP{display: flex; flex-flow: row wrap;}
 .TresCols_25{width:25%; min-width: 30rem; padding: 0 0.3rem;}
@@ -50,6 +50,7 @@ tr td:nth-child(1){column-width: 160px;}
 
 /* Objetos Genéricos */
 .di-f{display: flex;}
+.di-fb{display: flexbox;}
 .di-b{display: block;}
 .ta-c{text-align: center;}
 .va-t{vertical-align:top;}
@@ -81,6 +82,7 @@ tr td:nth-child(1){column-width: 160px;}
 .wAuto{width: auto;}
 .mw-120{min-width: 120px;}
 .mw-150{min-width: 150px;}
+.mh-50{min-height: 50px;}
 .h10{height: 10%;}
 .h20{height: 20%;}
 .h30{height: 30%;}
@@ -99,7 +101,7 @@ tr td:nth-child(1){column-width: 160px;}
 .GridContainerConMarco{display: grid; min-height: 100px; margin:10px; padding: 10px; border: gray solid thin;}
 .GridContainerSinMarco{display: grid; min-height: 20px; margin:10px; font-size: 70%;}
 .Elemento{width: 11%; min-width: 30px; text-align: center; border: black dashed thin; margin:0.2rem; padding: 0.3rem 0.1px; background-color:var(--ColorElemento);}
-.GridElemento{display: inline-grid; width: 100%; min-width: 30px; text-align: center; border: black dashed thin; margin:0.2rem; padding: 0.3rem 0.1px; background-color:var(--ColorElemento);}
+.GridElemento{display: inline-grid; width: 100%; min-width: 30px; justify-content:center; align-content: center; border: black dashed thin; margin:0; padding: 0.3rem 0.1px; background-color:var(--ColorElemento);}
 .ElementoOculto{width: 11%; min-width: 30px; margin:0.3rem;}
 .Espacio11{width: 11%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
 .Espacio16{width: 16%; font-size: 100%; text-align: center; border-top: dotted gray; margin:2px; padding: 0px; height: 20px;}
@@ -143,37 +145,48 @@ tr td:nth-child(1){column-width: 160px;}
 .ejCSS4003:hover .Elemento{opacity: 1;}
 .ejCSS400401{position:relative; left: 10px;}
 .ejCSS400402{position:relative; left: -20px; top:10px;}
-.ejCSS5000{display:grid; grid-template-columns: 3fr 1fr 100fr; grid-template-rows: 4fr 2fr 70fr; margin: 0px 10%; text-align: center;}
+.ejCSS5000{display:grid; grid-template-columns: 3fr 1fr 100fr; grid-template-rows: 4fr 2fr 70fr; margin: 0px 10% 10px; text-align: center;}
 .ejCSS500001{grid-row: 1/ span 2; grid-column: 1/ span 2;}
 .ejCSS500002{grid-column: 3/ span 1; }
 .ejCSS500002X{grid-column: 3/ span 1; border-top: solid var(--ColorPropiedad) 1px;}
 .ejCSS500003{grid-row: 3/ span 1; writing-mode: vertical-lr; transform: rotate(180deg);}
 .ejCSS500003Y{grid-row: 3/ span 1; border-left: solid var(--ColorPropiedad) 1px;}
-.ejCSS500004{display:grid; grid-template-columns:repeat(5,1fr); grid-template-rows:repeat(4,1fr); margin: 0px; border: dotted gray 1px;}
+.ejCSS500004{display:grid; grid-template:repeat(4,1fr) / repeat(5,1fr); margin: 0px; gap: 10px;}
 .ejCSS50000Cell{background-color:var(--ColorElemento); padding: 15% 0;}
-.ejCSS50000CellBordeB{border-bottom: dotted gray 1px;}
-.ejCSS50000CellBordeL{border-left: dotted gray 1px;}
-.ejCSS50000CellBordeBL{border-bottom: dotted gray 1px; border-left: dotted gray 1px;}
-.ejCSS50000Cell7{background-color:var(--ColorElemento); grid-column: 2/ span 1; grid-row: 2/5; border-left: dotted gray 1px;}
-.ejCSS50000Cell701{display:grid; height:100%; grid-template-columns: 10fr 3fr 50fr; grid-template-rows: 100fr}
-.ejCSS50000Cell701Prop{background-color:var(--ColorSombraElemento); writing-mode: vertical-lr; transform: rotate(180deg);}
-.ejCSS50000Cell701Y{background-color:var(--ColorSombraElemento); border-left: solid var(--ColorPropiedad) 1px;}
+.ejCSS50000Cell7{background-color:var(--ColorElemento); grid-column: 2/ span 1; grid-row: 2/5;}
+.ejCSS50000Cell701{display:grid; height:100%; grid-template: 100fr / 10fr 3fr 50fr}
+.ejCSS50000Cell701Prop{background-color:var(--ColorElemento); writing-mode: vertical-lr; transform: rotate(180deg);}
+.ejCSS50000Cell701Y{background-color:var(--ColorElemento); border-left: solid var(--ColorPropiedad) 1px;}
 .ejCSS50000Cell701Txt{padding: 100% 0%;}
-.ejCSS50000Cell9{background-color:var(--ColorElemento); grid-row: 2/ span 2; grid-column: 4/ span 2;border-bottom: dotted gray 1px; border-left: dotted gray 1px;}
-.ejCSS50000Cell901{display:grid; grid-template-columns: 1fr; grid-template-rows: 2fr 1fr 12fr;}
-.ejCSS50000Cell901Prop{background-color:var(--ColorSombraElemento);}
-.ejCSS50000Cell901X{background-color:var(--ColorSombraElemento); border-top: solid var(--ColorPropiedad) 1px;}
+.ejCSS50000Cell9{background-color:var(--ColorElemento); grid-row: 2/ span 2; grid-column: 4/6;}
+.ejCSS50000Cell901{display:grid; grid-template: 3fr 1fr 12fr / 1fr; align-items: center;}
+.ejCSS50000Cell901Prop{background-color:var(--ColorElemento);}
+.ejCSS50000Cell901X{background-color:var(--ColorElemento); border-top: solid var(--ColorPropiedad) 1px;}
 .ejCSS50000Cell901Txt{padding: 30px 0;}
 .ejCSS5001{grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, 1fr);} 
-.ejCSS5002{grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, 1fr);} 
-.ejCSS500201{grid-column: 3/ span 2; grid-row: 1/ span 2;} 
-.ejCSS5003{grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(5, 1fr);} 
+.ejCSS5002{grid-template:repeat(3, 1fr) / repeat(5, 1fr);} 
+.ejCSS500201{grid-column: 3/5; grid-row: 1/ span 2;align-content:center;} 
 .ejCSS5003Titulo{display:grid; grid-template-columns: 3fr 6fr 2fr 3fr; grid-template-rows: repeat(3, 1fr)}
-.ejCSS500301{grid-column: 1/ span 5;}
-.ejCSS500302{grid-row: 2/ span 3;}
-.ejCSS500303{grid-row: 2/ span 3; grid-column: 2/ span 3;}
-.ejCSS500304{grid-row: 2/ span 2;}
-.ejCSS500306{grid-column: 1/ span 5;}
+.ejCSS5003{grid-template: 1fr 2fr 1fr 1fr / 1fr 3fr 1fr;} 
+.ejCSS500301{grid-column: 1/-1;}
+.ejCSS500302{grid-row: 2/ span 2;}
+.ejCSS500303{grid-row: 2/ span 2;}
+.ejCSS500305{min-width: 90px;}
+.ejCSS500306{grid-column: 1/-1;}
+.ejCSS5300{display:grid; 
+           grid-template-columns: 1fr 3fr 1fr; 
+           grid-template-rows: repeat(5, 1fr);
+           grid-template-areas: 'tope tope tope'
+                                'side main propaganda' 
+                                'side main propaganda' 
+                                'side main propaganda' 
+                                'footer footer footer';
+           margin: 20px 10%; text-align: center; gap: 10px;}
+.ejCSS530001{grid-area: tope;}
+.ejCSS530002{grid-area: side;}
+.ejCSS530003{grid-area: main;}
+.ejCSS530004{grid-area: propaganda;}
+.ejCSS530005{grid-area: footer;}
 
 
 .ejSQLcmd{width: 100%;height: 50vh;}
@@ -240,16 +253,23 @@ tr td:nth-child(1){column-width: 160px;}
 .ejPiola0103:active{transform: scale(1);}
 .ejPiola0104{position:relative;}
 .ejPiola0104::before{content:attr(data-count); position:absolute; top:-0.7em; right:-0.7em; width:1.4em; height:1.4em;display:flex;justify-content: center; align-items: center; border-radius: 50%; background-color: red; color: white; font-size: smaller;}
-.ejPiola02{padding:1rem; background-color:white; box-shadow: 0 0 1rem rgba(83,78,76,0.5); margin:0.5rem;}
-.ejPiola03{padding:1rem; background-color:white; box-shadow: 0 0 2rem rgba(83,78,76,0.5); margin:0.5rem; border: 4px solid; border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;}
-.ejPiola04{padding:1rem; background-color:white; box-shadow: 0 0 5rem rgba(83,78,76,0.5); margin:0.5rem; border: 20px solid; border-image: url(../img/agua-piscina.jpg) 60 30;}
-.ejPiola05{position: fixed; z-index: 2; text-align: right; list-style: none;}
-.ejPiola05 a{text-decoration: none; padding: 10px 15px; background-color: #000; color:#FFF;display:block; min-width: 100px;}
-.ejPiola05 a:hover{background-color: #007}
-.ejPiola05>li{float: left;}
-.ejPiola05 li ul{display: none; position: absolute; min-width: 140px;}
-.ejPiola05 li:hover>ul{display: block;}
-.ejPiola05 li ul li ul{right: -140px; top: 0;}
+
+.ejPiola02{display: grid; grid-template: 1fr 1fr 1fr / 5fr auto 10fr 5fr 1fr; align-content:center; justify-content: center;}
+.ejPiola0201{padding:1rem; background-color:white; box-shadow: 0 0 1rem rgba(83,78,76,0.5); margin:0.5rem;}
+.ejPiola0202{padding:1rem; background-color:white; box-shadow: 0 0 2rem rgba(83,78,76,0.5); margin:0.5rem; border: 4px solid; border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;}
+.ejPiola0203{padding:1rem; background-color:white; box-shadow: 0 0 5rem rgba(83,78,76,0.5); margin:0.5rem; border: 20px solid; border-image: url(../img/agua-piscina.jpg) 60 30;}
+.ejPiola03{background-image: url(../img/agua-piscina.jpg); background-size: cover; background-position: center; position: relative; overflow: hidden;}
+.ejPiola03::after{content: attr(titulo); font-size:xx-large ; color: white;background-color: #16456198; position: absolute; inset: 0; display: grid; place-items:center; transform:translateY(100%); transition: transform 1s;}
+.ejPiola03:hover::after{transform: translateY(0);}
+.ejPiola05{display: grid; overflow: hidden;}
+/* .ejPiola0501{position: fixed; z-index: 2; text-align: right; list-style: none;} */
+.ejPiola0501{z-index: 2; text-align: left; list-style: none;}
+.ejPiola0501 a{text-decoration:none; padding: 10px 15px; background-color: #000; color:#FFF;display:block; min-width: 100px;}
+.ejPiola0501 a:hover{background-color: #007}
+.ejPiola0501>li{float: left;}
+.ejPiola0501 li ul{display: none; position: absolute; min-width: 140px; list-style-type: none;}
+.ejPiola0501 li:hover>ul{display: block;}
+.ejPiola0501 li ul li ul{right: -140px; top: 0;}
 .ejPiola06{margin-top: 100px; position: relative; z-index: 1;}
 
 @media (max-width:1021px){

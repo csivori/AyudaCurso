@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="../img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>
+        Compilado de Instrucciones CSS de Grid: Grid-Template-Areas y Grid-Area
+      </h2>
+    </header>
+    <main>
+      <!-- Explicaciones -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <div class="ejCSS5300">
+            <div class="GridElemento ejCSS530001">Menú</div>
+            <div class="GridElemento ejCSS530002">Barra Lateral</div>
+            <div class="GridElemento ejCSS530003">Principal</div>
+            <div class="GridElemento ejCSS530004">Propaganda</div>
+            <div class="GridElemento ejCSS530005">Pie de Página</div>
+          </div>
+          <p><a href="https://www.w3schools.com/cssref/pr_grid.asp" target="_blank">Mas sobre Grid...
+          </a></p>
+        </div>
+        <div class="DosCols_50">
+          <h4 class="mb-0">Para definir las Areas de una Grilla de 5 cols x 5 filas:</h4>
+          <div class="di-f">
+            <div class="CSS_TxtComun"><span class="CSS_Tag">main</span>{</div>
+            <div class="di-fb">
+              <div class="CSS_TxtComun"><span class="CSS_Propiedad">grid-template-rows</span>:
+                   <span class="CSS_Value">repeat(5, 1fr)</span>
+              </div>
+              <div class="CSS_TxtComun"><span class="CSS_Propiedad">grid-template-columns</span>:
+                   <span class="CSS_Value">repeat(5, 1fr)</span>
+              </div>
+              <div class="di-f">
+                <div class="CSS_TxtComun">
+                  <span class="CSS_Propiedad">grid-template-areas</span>:
+                </div>
+                <div class="di-fb CSS_TxtComun">
+                  <div>
+                    "<span class="CSS_Value">Menu Menu Menu Menu Menu</span>"
+                  </div>
+                  <div class="CSS_TxtComun">
+                    "<span class="CSS_Value"
+                      >BarraIzq Centro Centro Centro BarraD</span
+                    >"
+                  </div>
+                  <div>
+                    "<span class="CSS_Value"
+                      >BarraIzq Centro Centro Centro BarraD</span
+                    >"
+                  </div>
+                  <div>
+                    "<span class="CSS_Value"
+                      >BarraIzq Centro Centro Centro BarraD</span
+                    >"
+                  </div>
+                  <div>
+                    "<span class="CSS_Value">Pie Pie Pie Pie Pie</span>"; ...}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="mb-0">
+            Luego se definen los selectores (Tag, #id, .clase, etc...) para cada
+            area de esta Grilla:
+          </h4>
+          <ul class="my-0">
+            <li>
+              <div class="CSS_Tag">
+                #MenuSuperior<span class="CSS_TxtComun"
+                  >{<span class="CSS_Propiedad">grid-area </span>:
+                  <span class="CSS_Value">Menu</span>; ...}</span
+                >
+              </div>
+            </li>
+            <li>
+              <div class="CSS_Tag">
+                .AreaPrincipal<span class="CSS_TxtComun"
+                  >{<span class="CSS_Propiedad">grid-area </span>:
+                  <span class="CSS_Value">Centro</span>; ...}</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+        </div>
+        <div class="DosCols_50">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

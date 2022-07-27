@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/df986e655c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="./img/AyudaHTML.bmp" />
+    <link rel="icon" href="../img/AyudaHTML.bmp" />
     <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
   </head>
 
@@ -22,16 +22,20 @@
     </header>
     <main>
       <!-- Explicaciones -->
-      <div class="DosColsP">
-        <div class="DosCols_50"></div>
-        <div class="DosCols_50"></div>
+      <div class="UnaColP">
+          <h3>Ejemplos de: 
+          <a href="#botones">Botones Cancheros</a> / 
+          <a href="#recuadros">Recuadros Cancheros</a> / 
+          <a href="#overlay">Imágenes con Overlay</a> / 
+          <a href="#menu">Menúes sin Bootstrap</a> / 
+          <a href="#iconos_animados">Iconos Animados</a></h3>
       </div>
     </main>
     <footer>
       <!-- Ejemplos -->
       <div class="DosColsP">
         <div class="DosCols_50">
-          <h3>Ej.1: Botones Canchero con bordes redondeados y:</h3>
+          <h3 id="botones">Ej.1: Botones Canchero con bordes redondeados y:</h3>
           <table class="w80">
             <tr>
               <td class="w30">Margin al clickear</td>
@@ -106,130 +110,91 @@
               </td>
             </tr>
           </table>
-          <h3>
-            Ej.2: Recuadro Canchero con fondo blanco y sombra faded en los
-            bordes
-          </h3>
-          <div class="DosColsP">
-            <div class="DosCols_75">
-              <h4>
-                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
-                  >background-color</span
-                >:<span class="CSS_Value">white</span>;
-                <span class="CSS_Propiedad">box-shadow</span>:<span
-                  class="CSS_Value"
-                  >0 0 1rem rgba(83,78,76,0.5)</span
-                >; <span class="CSS_Propiedad">margin</span>:<span
-                  class="CSS_Value"
-                  >0.5rem</span
-                >;}
-              </h4>
-            </div>
-            <div class="DosCols_25">
-              <div class="ejPiola02">
-                <p>Recuadro Canchero !!</p>
-              </div>
-            </div>
-          </div>
-          <h3>
-            Ej.3: Recuadro Colorido con fondo blanco y sombra faded en los
-            bordes
-          </h3>
-          <div class="DosColsP">
-            <div class="DosCols_75">
-              <h4>
-                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
-                  >background-color</span
-                >:<span class="CSS_Value">white</span>;
-                <span class="CSS_Propiedad">box-shadow</span>:<span
-                  class="CSS_Value"
-                  >0 0 1rem rgba(83,78,76,0.5)</span
-                >; <span class="CSS_Propiedad">margin</span>:<span
-                  class="CSS_Value"
-                  >0.5rem</span
-                >; <span class="CSS_Propiedad">border</span>:<span
-                  class="CSS_Value"
-                  >4px solid</span
-                >; <span class="CSS_Propiedad">border-image</span>:<span
-                  class="CSS_Value"
-                  >conic-gradient(red, yellow, lime, aqua, blue, magenta, red)
-                  1</span
-                >;}
-              </h4>
-            </div>
-            <div class="DosCols_25">
-              <div class="ejPiola03">
-                <p>Recuadro Colorido !!</p>
-              </div>
-            </div>
-          </div>
+          <h3 id="recuadros">Ej.2: Recuadros Cancheros</h3>
+          <div class="ejPiola02">
+            <div>Fondo blanco y sombra faded en los bordes</div>
+            <h4><span class="CSS_Tag">.class</span>{</h4>
+            <h4><span class="CSS_Propiedad"
+                >background-color</span
+              >:<span class="CSS_Value">white</span>;<br>
+              <span class="CSS_Propiedad">box-shadow</span>:<span
+                class="CSS_Value"
+                >0 0 1rem rgba(83,78,76,0.5)</span
+              >;<br><span class="CSS_Propiedad">margin</span>:<span
+                class="CSS_Value"
+                >0.5rem</span>;}</h4>
+            <div class="ejPiola0201 ta-c"><p>Recuadro<br/>Canchero !!</p></div>
+            <div></div>
+            <div>Colorido con fondo blanco y sombra faded en los bordes</div>
+            <h4><span class="CSS_Tag">.class</span>{</h4>
+            <h4><span class="CSS_Propiedad">background-color</span>:
+            <span class="CSS_Value">white</span>;<br>
+            <span class="CSS_Propiedad">box-shadow</span>:
+            <span class="CSS_Value">0 0 1rem rgba(83,78,76,0.5)</span>;<br>
+            <span class="CSS_Propiedad">margin</span>:<span
+              class="CSS_Value">0.5rem</span>;}</h4>
+            <div class="ejPiola0202 ta-c"><p>Recuadro Colorido !!</p></div>
+            <div> </div>
+            <div>dentro de Imagen con fondo blanco y sombra faded en los bordes</div>
+            <h4><span class="CSS_Tag">.class</span>{</h4>
+            <h4><span class="CSS_Propiedad">background-color</span>:
+              <span class="CSS_Value">white</span>;<br>
+              <span class="CSS_Propiedad">box-shadow</span>:
+              <span class="CSS_Value">0 0 1rem rgba(83,78,76,0.5)</span>;<br>
+              <span class="CSS_Propiedad">margin</span>:
+              <span class="CSS_Value">0.5rem</span>;<br>
+              <span class="CSS_Propiedad">border</span>:
+              <span class="CSS_Value">4px solid</span>;<br>
+              <span class="CSS_Propiedad">border-image</span>:
+              <span class="CSS_Value">url(../img/agua-piscina.jpg) 60 30</span>;}
+            </h4>
+            <div class="ejPiola0203 ta-c"><p>Recuadro Colorido !!</p></div>
+            <div> </div>
+          </div>          
         </div>
         <div class="DosCols_50">
-          <h3>
-            Ej.4: Recuadro dentro de Imagen con fondo blanco y sombra faded en
-            los bordes
-          </h3>
-          <div class="DosColsP">
-            <div class="DosCols_75">
-              <h4>
-                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
-                  >background-color</span
-                >:<span class="CSS_Value">white</span>;
-                <span class="CSS_Propiedad">box-shadow</span>:<span
-                  class="CSS_Value"
-                  >0 0 1rem rgba(83,78,76,0.5)</span
-                >; <span class="CSS_Propiedad">margin</span>:<span
-                  class="CSS_Value"
-                  >0.5rem</span
-                >; <span class="CSS_Propiedad">border</span>:<span
-                  class="CSS_Value"
-                  >4px solid</span
-                >; <span class="CSS_Propiedad">border-image</span>:<span
-                  class="CSS_Value"
-                  >url(../img/agua-piscina.jpg) 60 30</span
-                >;}
-              </h4>
-            </div>
-            <div class="DosCols_25">
-              <div class="ejPiola04">
-                <p>Recuadro Dentro de Imagen !!</p>
-              </div>
-            </div>
-          </div>
-          <h3>Ej.5: Menú y Submenú sin Bootstrap</h3>
-          <ul class="ejPiola05">
-            <li>
-              <a href="#">Menu 1</a>
-              <ul>
-                <li><a href="#">SubMenu 1.1</a></li>
-                <li>
-                  <a href="#">SubMenu 1.2</a>
-                  <ul>
-                    <li><a href="#">SubSubMenu 1.2.1</a></li>
-                    <li><a href="#">SubSubMenu 1.2.2</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">SubMenu 1.3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Menu 2</a></li>
-            <li>
-              <a href="#">Menu 3</a>
-              <ul>
-                <li><a href="#">SubMenu 3.1</a></li>
-                <li><a href="#">SubMenu 3.2</a></li>
-                <li>
-                  <a href="#">SubMenu 3.3</a>
-                  <ul>
-                    <li><a href="#">SubSubMenu 3.3.1</a></li>
-                    <li><a href="#">SubSubMenu 3.3.2</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">SubMenu 3.4</a></li>
-              </ul>
-            </li>
-          </ul>
-          <h3 class="ejPiola06">
+          <h3 id="overlay">Ej.3: Imágenes con Overlay cuando pasas x encima</h3>
+          <div class="ejPiola03 mh-50" titulo="HOLA !!!"></div>
+          <h3 id="menu">Ej.5: Menú y Submenú sin Bootstrap</h3>
+          <div class="ejPiola05">
+            <ul class="ejPiola0501">
+              <li>
+                <a href="#">Menu 1</a>
+                <ul>
+                  <li><a href="#">SubMenu 1.1</a></li>
+                  <li>
+                    <a href="#">SubMenu 1.2 &gt;</a>
+                    <ul>
+                      <li><a href="#">SubSubMenu 1.2.1</a></li>
+                      <li><a href="#">SubSubMenu 1.2.2 &gt;</a>
+                        <ul>
+                          <li><a href="#">SubSubSubMenu 1.2.2.1</a></li>
+                          <li><a href="#">SubSubSubMenu 1.2.2.2</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">SubMenu 1.3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Menu 3</a>
+                <ul>
+                  <li><a href="#">SubMenu 3.1</a></li>
+                  <li><a href="#">SubMenu 3.2</a></li>
+                  <li><a href="#">SubMenu 3.3 &gt;</a>
+                    <ul>
+                      <li><a href="#">SubSubMenu 3.3.1</a></li>
+                      <li><a href="#">SubSubMenu 3.3.2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">SubMenu 3.4</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+          <h3 id="iconos_animados" class="ejPiola06">
             Ej.6: Iconos animados para agregar como Preloader (Font Awesome)
           </h3>
           <table class="w75">
