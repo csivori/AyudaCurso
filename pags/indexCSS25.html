@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="../img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+
+    <script
+      src="https://kit.fontawesome.com/df986e655c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>
+        Compilado de Instrucciones CSS de Animación: Animation y @keyframes
+      </h2>
+    </header>
+    <main>
+      <!-- Explicaciones -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <h4 class="CSS_Propiedad">Animation y @keyframes</h4>
+          <div class="CSS_TxtComun">
+            Esta propiedad de Estilo se usa para ejecutar una función definida
+            como <span class="CSS_Propiedad">@keyframes{}</span>.<br />
+            <br />
+            <h4 class="CSS_Propiedad">@keyframes{}</h4>
+            <div class="CSS_TxtComun">
+              Sirve para definir los frames con los cambios que una animación
+              debe realizar durante un ciclo de tiempo. El momento del frame en
+              el ciclo convenientemente se especifica con %. Por ejemplo:<br /><br />
+            </div>
+            <div class="CSS_TxtComun">
+              <table>
+                <tr>
+                  <td style="padding-right: 0; width: 4cm">
+                    <span class="CSS_Tag">@keyframes</span>
+                    <span class="CSS_Value">rebote</span> {
+                  </td>
+                  <td class="CSS_Value" style="text-align: right">0</td>
+                  <td style="width: 5cm">
+                    %{<span class="CSS_Propiedad">top</span>: <span class="CSS_Value">0px</span>;}
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="CSS_Value" style="text-align: right">25</td>
+                  <td>%{<span class="CSS_Propiedad">top</span>: <span class="CSS_Value">200px</span>;}</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="CSS_Value" style="text-align: right">50</td>
+                  <td>%{<span class="CSS_Propiedad">top</span>: <span class="CSS_Value">100px</span>;}</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="CSS_Value" style="text-align: right">75</td>
+                  <td>%{<span class="CSS_Propiedad">top</span>: <span class="CSS_Value">200px</span>;}</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="CSS_Value" style="text-align: right">100</td>
+                  <td>%{<span class="CSS_Propiedad">top</span>: <span class="CSS_Value">0px</span>;}}</td>
+                </tr>
+              </table>
+            </div>
+            <br /><br />
+            <a
+              href="http://www.w3schools.com/css/css3_animations.asp"
+              target="_blank"
+              >Mas sobre Animaciones...</a
+            ><br /><br />
+          </div>
+        </div>
+        <div class="DosCols_50">
+          <div class="CSS_TxtComun">
+            <span class="CSS_Propiedad">animation</span>
+            <span class="CSS_Value"
+              >nombre duracion cronología demora iteraciones</span
+            >
+            <br /><br />
+            Los valores son opcionales:
+          </div>
+          <ul class="CSS_TxtComun">
+            <li>
+              <span class="CSS_Value">nombre</span> el nombre del
+              <span class="CSS_Propiedad">@keyframes{}</span> a ejecutar.
+            </li>
+            <li>
+              <span class="CSS_Value">duracion</span> el tiempo que debe
+              ejecutar el <span class="CSS_Propiedad">@keyframes{}</span>. (Ej
+              2s, 500ms)
+            </li>
+            <li>
+              <span class="CSS_Value">cronología</span>
+              <ul>
+                <li>
+                  <strong>linear:</strong> el tiempo transcurre normalmente sin
+                  aceleraciones.
+                </li>
+                <li>
+                  <strong>ease:</strong> inicia lento, luego acelera y luego
+                  termina lento. Este es el default si no se especifica.
+                </li>
+                <li><strong>ease-in:</strong> inicia lento y luego acelera.</li>
+                <li><strong>ease-out:</strong> arranca y termina lento.</li>
+              </ul>
+            </li>
+            <li>
+              <span class="CSS_Value">demora</span> el tiempo que debe esperar
+              para iniciar la ejecución del
+              <span class="CSS_Propiedad">@keyframes{}</span>. (Ej 2s, 500ms)
+            </li>
+            <li>
+              <span class="CSS_Value">iteraciones</span> la cantidad de veces
+              que debe ejecutar el
+              <span class="CSS_Propiedad">@keyframes{}</span>.
+            </li>
+            <li>
+              <span class="CSS_Value">direccion</span>
+              <ul>
+                <li>
+                  <strong>normal:</strong> el tiempo transcurre de 0% a 100%.
+                  Este es el default si no se especifica.
+                </li>
+                <li>
+                  <strong>reverse:</strong> el tiempo transcurre de 100% a 0%.
+                </li>
+                <li>
+                  <strong>alternate:</strong> el tiempo transcurre de 0% a 100%
+                  y luego de 100% a 0%.
+                </li>
+                <li>
+                  <strong>alternate-reverse:</strong> el tiempo transcurre de
+                  100% a 0% y luego de 0% a 100%.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <h3 class="di-f">
+            <div>Ej.1:</div>
+            <div>
+              Cambiar los colores del ícono al pasar el mouse x encima durante 3
+              segundos.
+            </div>
+          </h3>
+          <div class="di-f">
+            <div>
+              <div class="di-f">
+                <div>
+                  <span class="CSS_Tag">@keyframes</span>
+                  <span class="CSS_Value">arcoiris</span> {
+                </div>
+                <table>
+                  <tr>
+                    <td
+                      class="CSS_Value"
+                      style="column-width: 20px; text-align: right"
+                    >
+                      0
+                    </td>
+                    <td>%{<span class="CSS_Propiedad">color</span>: red;}</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="CSS_Value"
+                      style="column-width: 20px; text-align: right"
+                    >
+                      25
+                    </td>
+                    <td>%{<span class="CSS_Propiedad">color</span>: green;}</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="CSS_Value"
+                      style="column-width: 20px; text-align: right"
+                    >
+                      50
+                    </td>
+                    <td>%{<span class="CSS_Propiedad">color</span>: blue;}</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="CSS_Value"
+                      style="column-width: 20px; text-align: right"
+                    >
+                      75
+                    </td>
+                    <td>%{<span class="CSS_Propiedad">color</span>: green;}</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="CSS_Value"
+                      style="column-width: 20px; text-align: right"
+                    >
+                      100
+                    </td>
+                    <td>%{<span class="CSS_Propiedad">color</span>: red;}}</td>
+                  </tr>
+                </table>
+              </div>
+              <div>
+                <span class="CSS_Tag">.class:hover</span>{<span
+                  class="CSS_Propiedad"
+                  >animation</span
+                >: <span class="CSS_Value">arcoiris 3s infinite</span>;}
+              </div>
+            </div>
+            <div style="padding-left: 1cm">
+              <i class="fas fa-satellite fa-8x ejCSS2501"></i>
+            </div>
+          </div>
+        </div>
+        <div class="DosCols_50">
+          <h3>Ej.2: Mover y Rotar una imagen</h3>
+          <div class="di-f">
+            <div>
+              <div class="di-f">
+                <div style="min-width:fit-content;">
+                  <span class="CSS_Tag">@keyframes</span>
+                  <span class="CSS_Value">triangulo</span> {
+                </div>
+                <table>
+                  <tr>
+                    <td class="CSS_Value" style="column-width: 20px; text-align: right">0</td>
+                    <td style="min-width: 370px">
+                      %{<span class="CSS_Propiedad">left</span>:
+                      <span class="CSS_Value">0px</span>;
+                      <span class="CSS_Propiedad">top</span>:
+                      <span class="CSS_Value">0px</span>;}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="CSS_Value" style="column-width: 20px; text-align: right">20</td>
+                    <td>
+                      %{<span class="CSS_Propiedad">left</span>:
+                      <span class="CSS_Value">0px</span>;
+                      <span class="CSS_Propiedad">top</span>:
+                      <span class="CSS_Value">0px</span>;
+                      <span class="CSS_Propiedad">transform</span>:
+                      <span class="CSS_Value">rotate(-171deg)</span>;}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="CSS_Value" style="column-width: 20px; text-align: right">30</td>
+                    <td>
+                      %{<span class="CSS_Propiedad">left</span>:
+                      <span class="CSS_Value">-480px</span>;
+                      <span class="CSS_Propiedad">top</span>:
+                      <span class="CSS_Value">-80px</span>;
+                      <span class="CSS_Propiedad">transform</span>:
+                      <span class="CSS_Value">rotate(-171deg)</span>;}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="CSS_Value" style="column-width: 20px; text-align: right">50</td>
+                    <td>
+                      %{<span class="CSS_Propiedad">left</span>:
+                      <span class="CSS_Value">-480px</span>;
+                      <span class="CSS_Propiedad">top</span>:
+                      <span class="CSS_Value">-80px</span>;
+                      <span class="CSS_Propiedad">transform</span>:
+                      <span class="CSS_Value">rotate(-270deg)</span>;}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="CSS_Value" style="column-width: 20px; text-align: right">70</td>
+                    <td>
+                      %{<span class="CSS_Propiedad">left</span>:
+                      <span class="CSS_Value">-480px</span>;
+                      <span class="CSS_Propiedad">top</span>:
+                      <span class="CSS_Value">48px</span>;
+                      <span class="CSS_Propiedad">transform</span>:
+                      <span class="CSS_Value">rotate(-270deg)</span>;}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="CSS_Value" style="column-width: 20px; text-align: right">80</td>
+                    <td>
+                      %{<span class="CSS_Propiedad">left</span>:
+                      <span class="CSS_Value">-480px</span>;
+                      <span class="CSS_Propiedad">top</span>:
+                      <span class="CSS_Value">48px</span>;
+                      <span class="CSS_Propiedad">transform</span>:
+                      <span class="CSS_Value">rotate(-380deg)</span>;}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="CSS_Value" style="column-width: 20px; text-align: right">100</td>
+                    <td>
+                      %{<span class="CSS_Propiedad">left</span>:
+                      <span class="CSS_Value">0px</span>;
+                      <span class="CSS_Propiedad">top</span>:
+                      <span class="CSS_Value">0px</span>;
+                      <span class="CSS_Propiedad">transform</span>:
+                      <span class="CSS_Value">rotate(-360deg)</span>;}}
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div>
+                <span class="CSS_Tag">.class</span>{<span class="CSS_Propiedad"
+                  >animation</span
+                >: <span class="CSS_Value">triangulo 20s 2s infinite</span>;}
+              </div>
+            </div>
+            <div>
+              <i class="fas fa-space-shuttle fa-8x ejCSS2502"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

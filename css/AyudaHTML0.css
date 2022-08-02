@@ -1,10 +1,3 @@
-/* Inicio a Borrar */
-/* header,main, footer, .DosColP, .DosCol1, .DosCol2 {border: #FF0000 0.1rem solid; min-height:100px;} */
-/* main, footer, .DosColP, .DosCol1, .DosCol2 {min-height:100px;} */
-/* .DosCols1{background-color: lightblue;} */
-/* .DosCols2{background-color: lightcoral;} */
-/* Fin a Borrar */
-
 :root{
     --ColorTag:rgba(255, 128, 128, 0.8);
     --ColorPropiedad:rgb(39, 168, 248);
@@ -38,7 +31,9 @@ tr td:nth-child(1){column-width: 160px;}
 /* .DosColsP{display: grid; grid-template-columns: wrap;} */
 .DosColsP{display: flex; flex-flow: row wrap;}
 .DosCols_25{width:24%; min-width: 30rem; padding: 0 0.3rem;}
+.DosCols_33{width:32%; min-width: 30rem; padding: 0 0.3rem;}
 .DosCols_50{width:49%; min-width: 30rem; padding: 0 0.3rem;}
+.DosCols_66{width:66%; min-width: 30rem; padding: 0 0.3rem;}
 .DosCols_75{width:74%; min-width: 30rem; padding: 0 0.3rem;}
 
 /* Tag para estructura de las página con 3 Columnas */
@@ -115,8 +110,27 @@ tr td:nth-child(1){column-width: 160px;}
 .CSS20_AnchoPadding{margin-left: 10%; width: 4%; vertical-align: middle;}
 
 .ejCSS1001,.ejCSS1002{margin: 0.4rem;}
-.ejCSS2001{margin: 0.4rem 0; color:gray}
-.ejCSS2001>div{min-width: 100px; margin: 0 0 0 0.1rem} 
+.ejCSS2001{margin: 0.4rem 0; color:gray;}
+.ejCSS2001>div{min-width: 100px; margin: 0 0 0 0.1rem;} 
+.ejCSS2501:hover{animation: arcoiris 3s infinite;}
+@keyframes arcoiris {
+    0%{color: red;}
+    25%{color: green;}
+    50%{color: blue;}
+    75%{color: green;}
+    100%{color: red;}
+}
+.ejCSS2502{position:relative; animation: triangulo 20s 2s infinite;}
+@keyframes triangulo {
+    0%{left: 0px; top: 0px;}
+    20%{left:0px; top: 0px; transform:rotate(-171deg);}
+    30%{left:-480px; top: -80px; transform:rotate(-171deg);}
+    50%{left:-480px; top: -80px; transform:rotate(-270deg);}
+    70%{left:-480px; top: 48px; transform:rotate(-270deg);}
+    90%{left:-480px; top: 48px; transform:rotate(-380deg); animation-timing-function: ease-in;}
+    95%{left:-240px; top: 20px; transform:rotate(-370deg); animation-timing-function: ease-out;}
+    100%{left: 0px; top: 0px; transform:rotate(-360deg);}
+}
 .ejCSS3001{justify-content:flex-start; align-items:flex-start;}
 .ejCSS3002{justify-content:flex-end; align-items:center;}
 .ejCSS3003{justify-content:space-between; align-items:flex-end;}
