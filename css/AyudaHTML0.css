@@ -48,6 +48,7 @@ tr td:nth-child(1){column-width: 160px;}
 .di-fb{display: flexbox;}
 .di-b{display: block;}
 .ta-c{text-align: center;}
+.ta-l{text-align:left;}
 .va-t{vertical-align:top;}
 .va-m{vertical-align:middle;}
 .va-b{vertical-align: bottom;}
@@ -272,9 +273,13 @@ tr td:nth-child(1){column-width: 160px;}
 .ejPiola0201{padding:1rem; background-color:white; box-shadow: 0 0 1rem rgba(83,78,76,0.5); margin:0.5rem;}
 .ejPiola0202{padding:1rem; background-color:white; box-shadow: 0 0 2rem rgba(83,78,76,0.5); margin:0.5rem; border: 4px solid; border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;}
 .ejPiola0203{padding:1rem; background-color:white; box-shadow: 0 0 5rem rgba(83,78,76,0.5); margin:0.5rem; border: 20px solid; border-image: url(../img/agua-piscina.jpg) 60 30;}
-.ejPiola03{background-image: url(../img/agua-piscina.jpg); background-size: cover; background-position: center; position: relative; overflow: hidden;}
-.ejPiola03::after{content: attr(titulo); font-size:xx-large ; color: white;background-color: #16456198; position: absolute; inset: 0; display: grid; place-items:center; transform:translateY(100%); transition: transform 1s;}
-.ejPiola03:hover::after{transform: translateY(0);}
+.ejPiola03{--scale: scale(0);}
+.ejPiola03::after{transition: transform; transform: var(--scale);}
+.ejPiola03:checked{animation: sombra .3s; --scale: scale(1);}
+@keyframes sombra {50%{box-shadow: 0 0 14px #49F}}
+.ejPiola04{background-image: url(../img/agua-piscina.jpg); background-size: cover; background-position: center; position: relative; overflow: hidden;}
+.ejPiola04::after{content: attr(titulo); font-size:xx-large ; color: white;background-color: #16456198; position: absolute; inset: 0; display: grid; place-items:center; transform:translateY(100%); transition: transform 1s;}
+.ejPiola04:hover::after{transform: translateY(0);}
 .ejPiola05{display: grid; overflow: hidden;}
 /* .ejPiola0501{position: fixed; z-index: 2; text-align: right; list-style: none;} */
 .ejPiola0501{z-index: 2; text-align: left; list-style: none;}

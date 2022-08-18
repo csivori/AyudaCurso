@@ -1,69 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayuda CaC de HTML</title>
+    <link rel="icon" href="../img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
-    <link rel="icon" href="../img/AyudaHTML.bmp">
-    <link rel="STYLESHEET" href="../css/estilos.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
-        <h2>Compilado de Instrucciones HTML de Formularios</h2>
-        <br>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>Compilado de Instrucciones HTML de Formularios</h2>
     </header>
     <main>
-        <h3>form: Define un Formulario con metodo GET</h3>
-        <form action="../index.html" method="GET">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
-            <label for="contrasenia">Contraseña</label>
-            <input type="password" name="contrasenia" id="contrasenia">
-            <input type="submit" value="Enviar">
-        </form>
-        <br>
-        <h3>form: Define un Formulario con metodo POST</h3>
-        <form action="../index.html" method="POST">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre"><br>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido"><br>
-            <label for="contrasenia">Contraseña</label>
-            <input type="password" name="contrasenia" id="contrasenia"><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-        <br>
-        <h3>table sin header + form: Define un Formulario alineado</h3>
-        <form action="../index.html" method="POST">
-            <table>
-                <tr>
-                    <td><label for="nombre">Nombre</label></td>
-                    <td><input type="text" name="nombre" id="nombre"></td>
-                </tr>
-                <tr>
-                    <td><label for="apellido">Apellido</label></td>
-                    <td><input type="text" name="apellido" id="apellido"></td>
-                </tr>
-                <tr>
-                    <td><label for="contrasenia">Contraseña</label></td>
-                    <td><input type="password" name="contrasenia" id="contrasenia"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Enviar"></td>
-                </tr>
-            </table>
-        </form>
-        <br>
+      <!-- Explicaciones -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <p>
+            Los formularios permiten al usuario ingresar información a la
+            aplicación. La etiqueta
+            <span class="CSS_Tag">&lt;form&gt;</span> debe englobar todos los
+            elementos que permiten ingresar diversos tipos de información. Los
+            atributos mas comunes son:
+          </p>
+          <table style="border-spacing: 15px">
+            <tr>
+              <td style="width: 10px">
+                <span class="CSS_Propiedad">action</span>
+              </td>
+              <td>
+                Especifica la URL o la función JavaScript que debe llamarse al
+                ejecutar el Submit.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Propiedad">method</span></td>
+              <td>
+                Especifica el metodo de envío de la información:
+                <ul class="my-0">
+                  <li>
+                    <span class="CSS_Value">GET</span>: agrega a la URL los
+                    campos incluidos en el formulario. Estarían visibles en la
+                    URL destino.
+                  </li>
+                  <li>
+                    <span class="CSS_Value">POST</span>: graba los campos
+                    incluidos en el formulario en un espacio especial de
+                    almacenamiento del Browser. Serían invisibles al usuario.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Propiedad">target</span></td>
+              <td>
+                Especifica donde mostrar el HTML resultante de ejecutar
+                <span class="CSS_Propiedad">action</span> lo muestra en:
+                <ul class="my-0">
+                  <li>
+                    <span class="CSS_Value">_blank</span>: una nueva solapa.
+                  </li>
+                  <li>
+                    <span class="CSS_Value">_self</span>: el mismo recuadro de
+                    la solapa.
+                  </li>
+                  <li>
+                    <span class="CSS_Value">_parent</span>: el recuadro padre.
+                  </li>
+                  <li><span class="CSS_Value">_top</span>: la misma solapa.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Propiedad">autocomplete</span></td>
+              <td>
+                Especifica si permite autocompletar con información histórica:
+                <span class="CSS_Value">on</span> /
+                <span class="CSS_Value">off</span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Propiedad">novalidate</span></td>
+              <td>
+                Especifica que no se debe validar la información al ejecutar el
+                Submit
+              </td>
+            </tr>
+          </table>
+          <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">Mas información...</a>
+        </div>
+        <div class="DosCols_50">
+          <p>Los elementos que puede contener un formulario son:</p>
+          <table>
+            <tr>
+              <td style="width: 100px">
+                <span class="CSS_Tag">&lt;input&gt;</span>
+              </td>
+              <td>
+                Es el campo de ingreso de datos por excelencia. Implementa
+                varios tipos pre-existentes que automatizan el ingreso de
+                información específica. También incluye validaciones básicas de
+                campo.
+                <a
+                  href="https://www.w3schools.com/tags/tag_input.asp"
+                  target="_blank"
+                  >Mas información...</a
+                >
+                <table>
+                  <tr>
+                    <td style="width: 10px">
+                      <span class="CSS_Propiedad"> type </span>
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Información:</td>
+                          <td>
+                            <span class="CSS_Value">text</span> /
+                            <span class="CSS_Value">number</span> /
+                            <span class="CSS_Value">time</span> /
+                            <span class="CSS_Value">date</span> /
+                            <span class="CSS_Value">datetime-local</span> /
+                            <span class="CSS_Value">month</span> /
+                            <span class="CSS_Value">week</span> /
+                            <span class="CSS_Value">tel</span> /
+                            <span class="CSS_Value">color</span> /
+                            <span class="CSS_Value">password</span> /
+                            <span class="CSS_Value">url</span> /
+                            <span class="CSS_Value">email</span> /
+                            <span class="CSS_Value">file</span> /
+                            <span class="CSS_Value">image</span> /
+                            <span class="CSS_Value">range</span> /
+                            <span class="CSS_Value">hidden</span> /
+                            <span class="CSS_Value">checkbox</span> /
+                            <span class="CSS_Value">radio</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 5.6rem">Botones:</td>
+                          <td>
+                            <span class="CSS_Value">button</span> /
+                            <span class="CSS_Value">submit</span> /
+                            <span class="CSS_Value">reset</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Tag">&lt;textarea&gt;</span></td>
+              <td>
+                Es similar a un <span class="CSS_Tag">input</span> pero
+                multi-línea. Mediante <span class="CSS_Propiedad">cols</span> y
+                <span class="CSS_Propiedad">rows</span> indica su dimensión en
+                pantalla.
+                <a
+                  href="https://www.w3schools.com/tags/tag_textarea.asp"
+                  target="_blank"
+                  >Mas información...</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Tag">&lt;label&gt;</span></td>
+              <td>
+                Mediante el atributo
+                <span class="CSS_Propiedad">for</span> indica el
+                <span class="CSS_Propiedad">id</span> de un
+                <span class="CSS_Tag">&lt;input&gt;</span> o
+                <span class="CSS_Tag">&lt;textarea&gt;</span> al que se asocia.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Tag">&lt;select&gt;</span> +<br><span class="CSS_Tag">&lt;optgroup&gt;</span> +<br><span class="CSS_Tag">&lt;option&gt;</span></td>
+              <td>
+                Implementa un objeto ComboBox o DropDown para seleccionar de una
+                lista de posibles valores.
+                <a href="https://www.w3schools.com/tags/tag_select.asp" target="_blank">Mas información...</a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Tag">&lt;datalist&gt;</span></td>
+              <td>Define una lista de posibles valores, que en combinación con un input, 
+                Implementa un objeto ComboBox o DropDown Editable que permite seleccionar o ingresar un valor que no figura en la lista.
+                <a
+                  href="https://www.w3schools.com/tags/tag_datalist.asp"
+                  target="_blank"
+                  >Mas información...</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Tag">&lt;button&gt;</span></td>
+              <td>A diferencia de un <span class="CSS_Tag">&lt;input</span>
+                <span class="CSS_Propiedad">type</span>="<span class="CSS_Value"
+                  >button</span>"<span class="CSS_Tag">&gt;</span>, éste permite estilizar el título e incorporar imágenes. Se debe especificar el <span class="CSS_Propiedad">type</span>="<span class="CSS_Value">submit</span>, <span class="CSS_Value">reset</span> o <span class="CSS_Value">button</span>" para mejorar el comportamiento del formulario.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="CSS_Tag">&lt;fieldset&gt;<br />&lt;legend&gt;</span>
+              </td>
+              <td>
+                Implementa un objeto GroupBox, envolviendo una serie de
+                elementos en su interior por afinidad semántica (ej: Domicilio,
+                Datos Personales, etc...). <a href="https://www.w3schools.com/tags/tag_fieldset.asp" target="_blank">Mas información...</a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="CSS_Tag">&lt;output&gt;</span></td>
+              <td>Sirve para mostrar el resultado de un proceso. (ej: Resultado de una cálculo matemático)
+                <span class="CSS_Propiedad">for</span> indica el
+                <span class="CSS_Propiedad">id</span> de el o los
+                <span class="CSS_Tag">&lt;input&gt;</span> asociados. <a href="https://www.w3schools.com/tags/tag_output.asp" target="_blank">Mas información...</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </main>
     <footer>
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <h3 class="mb-0">Ej.1: Formulario GET</h3>
+          <form class="rubberband" style="padding: 0.5rem;" action="formEjemploGet.html" method="get">
+            <label for="nom">Nombre</label>
+            <input type="text" id="nom" name="nombre">
+            <label for="ap">Apellido</label>
+            <input type="text" id="ap" name="apellido">
+            <input type="submit" value="Procesar como GET">
+          </form>
+          <h3 class="mb-0">Ej.2: Formulario POST</h3>
+          <form class="rubberband" style="padding: 0.5rem;" action="formEjemploGet.html" method="post">
+            <label for="nom">Nombre</label>
+            <input type="text" id="nom" name="nombre">
+            <label for="ap">Apellido</label>
+            <input type="text" id="ap" name="apellido">
+            <input type="submit" value="Procesar como POST">
+          </form>
+          <h3 class="mb-0">Ej.3: Formulario con método definido en el Botón</h3>
+          <form class="rubberband" style="padding: 0.5rem;">
+            <label for="nom">Nombre</label>
+            <input type="text" id="nom" name="nombre">
+            <label for="ap">Apellido</label>
+            <input type="text" id="ap" name="apellido"><br><br>
+            <input type="submit" value="Procesar como GET" formaction="formEjemploGet.html" formmethod="get">
+            <input type="submit" value="Procesar como POST" formaction="formEjemploGet.html" formmethod="post">
+          </form>
+          <h3 class="mb-0">Ej.4: Formulario GET con CUIT numérico, sin autocompletar y obligatorio</h3>
+          <form class="rubberband" style="padding: 0.5rem;" action="formEjemploGet.html" method="get">
+            <label for="cuit">CUIT</label>
+            <input type="number" id="cuit" name="CUIT" autocomplete="off" autofocus max="99999999999" required>
+            <label for="ejDeshabilitado">ej Deshabilitado</label>
+            <input type="date" id="ejDeshabilitado" name="ejDeshabilitado" disabled>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fechaDeIngreso">
+            <input type="submit">
+          </form>
+        </div>
+        <div class="DosCols_50">
 
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

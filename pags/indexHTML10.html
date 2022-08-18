@@ -1,51 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
-    <link rel="icon" href="../img/AyudaHTML.bmp">
-    <link rel="STYLESHEET" href="../css/estilos.css">
-</head>
+    <link rel="icon" href="../img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="./indexHTML.html"><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"></a>
-        <h2>Compilado de Instrucciones HTML de Texto</h2>
-        <br>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>Compilado de Instrucciones HTML de Texto</h2>
     </header>
     <main>
-        <h3>h1..h6: Títulos con distinto tamaño</h3>
-        <h1 title="Este es el Tooltip> del h1">Mi Titulo</h1>
-        <h2>Mi SubTitulo</h2>
-        <h3 title="Este es el Tooltip> del h3">Mi Titulo</h3>
-        <h4>Mi Titulo</h4>
-        <h5>Mi Titulo</h5>
-        <h6>Mi Titulo</h6>
-
-        <h3>Comentario
-            <!--Comentario-->
-        </h3>
-        <h3>Texto sin Formato</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique architecto hic
-        mollitia velit ipsa, cum delectus voluptatum doloremque, itaque minima unde tenetur rerum
-        deserunt porro eos laborum numquam illum?
-        <h3>p: Parrafo de Texto</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam asperiores hic error
-            deserunt blanditiis provident, ex, quos quam dignissimos repudiandae sit unde molestias
-            repellendus minima corporis placeat harum. Rem, officiis?</p>
-        <h3>p: Parrafo de Texto + br: Salto de Linea</h3>
-        <p>Lorem ipsum dolor, amet consectetur adipisicing elit.<br>Veniam asperiores hic error
-            deserunt blanditiis provident, ex, <br>quos quam dignissimos repudiandae sit unde
-            molestias repellendus <br>minima corporis placeat harum. Rem, officiis?</p>
-        <h3>p: Parrafo de Texto + abbr: abrebiatura</h3>
-        <p>El sujeto <abbr title="Carlos Alberto Sivori">CAS</abbr> tiene 53 años</p>
+      <!-- Explicaciones -->
+      <div class="TresColsP">
+        <div class="DosCols_33">
+          <h3>Tratamiento para el Texto</h3>
+          <table>
+            <tr>
+              <td style="width: 10px"></td>
+              <td>(sin Tag)</td>
+              <td>Texto sin Formato</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="CSS_Tag">&lt;p&gt;</span></td>
+              <td>Parrafo de Texto</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;h1&gt;</span>..<span class="CSS_Tag"
+                  >&lt;h6&gt;</span
+                >
+              </td>
+              <td>Títulos con distinto tamaño</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="CSS_Tag">&lt;abbr&gt;</span></td>
+              <td>Explicación de una Abreviatura</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="CSS_Tag">&lt;br&gt;</span></td>
+              <td>Salto de Línea</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><span class="CSS_Tag">&lt;hr&gt;</span></td>
+              <td>Línea Separadora Horizontal</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;!--</span>
+                <span class="CSS_Tag">--&gt;</span>
+              </td>
+              <td>Texto para Comentarios en HTML</td>
+            </tr>
+          </table>
+        </div>
+        <div class="DosCols_33"></div>
+        <div class="DosCols_33"></div>
+      </div>
     </main>
     <footer>
-
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <h3 class="mb-0">Ej.1: Uso de p, br, hr y abbr</h3>
+          <div>
+            <div>
+              <h4 class="my-0 ta-c">Código HTML</h4>
+              <span class="CSS_Tag">&lt;p&gt;</span>Parrafo 1: Este es el
+              renglón 1<span class="CSS_Tag">&lt;br /&gt;</span><br />El sujeto
+              <span class="CSS_Tag">&lt;abbr</span>
+              <span class="CSS_Propiedad">title</span>=<span class="CSS_Value"
+                >"Carlos Alberto Sivori"</span
+              ><span class="CSS_Tag">&gt;</span>CAS<span class="CSS_Tag"
+                >&lt;/abbr&gt;</span
+              >
+              tiene 53 años<span class="CSS_Tag">&lt;br /&gt;</span><br />
+              Y este es el renglón 3<span class="CSS_Tag">&lt;/p&gt;</span
+              ><br />
+              <span class="CSS_Tag">&lt;p&gt;</span>Parrafo 2: Este es el
+              renglón 1<span class="CSS_Tag">&lt;br /&gt;</span>Este el renglón
+              2<span class="CSS_Tag">&lt;/p&gt;</span>
+              <span class="CSS_Tag">&lt;hr /&gt;</span><br />
+              <span class="CSS_Tag">&lt;p&gt;</span>Parrafo 3: Este es el
+              renglón 1<span class="CSS_Tag">&lt;br /&gt;</span>Este el renglón
+              2<span class="CSS_Tag">&lt;/p&gt;</span>
+            </div>
+            <div>
+              <h4 class="mb-0 ta-c">Salida</h4>
+              <div class="rubberband">
+                <p>
+                  Parrafo 1: Este es el renglón 1<br />El sujeto
+                  <abbr title="Carlos Alberto Sivori">CAS</abbr> tiene 53
+                  años<br />Y este es el renglón 3
+                </p>
+                <p>Parrafo 2: Este es el renglón 1<br />Este el renglón 2</p>
+                <hr class="wAuto" />
+                <p>Parrafo 3: Este es el renglón 1<br />Este el renglón 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="DosCols_50">
+          <h3 class="mb-0">Ej.2: Uso de h1..h6</h3>
+          <table>
+            <tr>
+              <th style="width: 10px"></th>
+              <th><h4 class="mb-0">Código HTML</h4></th>
+              <th><h4 class="mb-0">Salida</h4></th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;h1&gt;</span>Título<span
+                  class="CSS_Tag"
+                  >&lt;/h1&gt;</span
+                >
+              </td>
+              <td><h1 class="my-0">Título</h1></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;h2&gt;</span>Título<span
+                  class="CSS_Tag"
+                  >&lt;/h2&gt;</span
+                >
+              </td>
+              <td><h2 class="my-0 ta-l">Título</h2></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;h3&gt;</span>Título<span
+                  class="CSS_Tag"
+                  >&lt;/h3&gt;</span
+                >
+              </td>
+              <td><h3 class="my-0">Título</h3></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;h4</span> <span class="CSS_Propiedad">title</span>=<span class="CSS_Value">"El Tooltip H4"</span><span class="CSS_Tag">&gt;</span>Título<span
+                  class="CSS_Tag"
+                  >&lt;/h4&gt;</span
+                >
+              </td>
+              <td><h4 class="my-0" title="El Tooltip H4">Título</h4></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;h5&gt;</span>Título<span
+                  class="CSS_Tag"
+                  >&lt;/h5&gt;</span
+                >
+              </td>
+              <td><h5 class="my-0">Título</h5></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;h6</span> <span class="CSS_Propiedad">title</span>=<span class="CSS_Value">"El Tooltip H6"</span><span class="CSS_Tag">&gt;</span>Título<span
+                  class="CSS_Tag"
+                  >&lt;/h6&gt;</span
+                >
+              </td>
+              <td><h6 class="my-0" title="El Tooltip H6">Título</h6></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <span class="CSS_Tag">&lt;p&gt;</span>Texto Común<span
+                  class="CSS_Tag"
+                  >&lt;/p&gt;</span
+                >
+              </td>
+              <td><p class="my-0">Texto Común</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
