@@ -62,41 +62,91 @@
                     </tr>
                     <tr>
                         <td><span class="CSS_Tag">.clase1 .clase2</span>{}</td>
-                        <td>Selecciona todos los elementos que tienen la clase2 descendiendo de la clase1 en el HTML
-                        </td>
+                        <td>Selecciona todos los elementos que tienen la clase2 descendiendo de la clase1 en el HTML</td>
                     </tr>
-                </table>
+                    <tr>
+                        <td><span class="CSS_Tag">.clase1>.clase2</span>{}</td>
+                        <td>Selecciona todos los elementos que tienen la clase2 descendiendo directamente de la clase1 en el HTML</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">.clase1 ~ .clase2</span>{}</td>
+                        <td>Selecciona todos los elementos con clase2 a continuación de un elemento con clase1 en el HTML</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">.clase1 + .clase2</span>{}</td>
+                        <td>Selecciona cada elemento con clase2 ubicado inmediatamente a continuación de un elemento con clase1 en el HTML</td>
+                    </tr>
+                </table><br>
                 <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Mas
-                    Selectores...</a><br><br>
+                    Selectores...</a>
             </div>
             <div class="DosCols_50">
-                <h4>Pseudo-Clases:<span class="CSS_TxtComun">Las pseudo-clases sirven para definir un estado específico
-                        de un elementio.</span></h4>
-                <h4>Pseudo-Clases +Usadas:</h4>
+                <h4>Pseudo-Clases:<span class="CSS_TxtComun">Las pseudo-clases sirven para definir un estado específico de un elemento. Las + Usadas:</span></h4>
                 <table>
                     <tr>
+                        <th style="width: 220px;">Pseudo-Clase</th>
+                        <th>Aplica...</th>
+                    </tr>
+                    <tr>
                         <td><span class="CSS_Tag">selector:focus</span>{}</td>
-                        <td>Aplica el estilo al elemento cuando esta en foco</td>
+                        <td>el estilo al elemento cuando esta en foco</td>
                     </tr>
                     <tr>
                         <td><span class="CSS_Tag">selector:link</span>{}</td>
-                        <td>Aplica el estilo a un elemento cuando aún esta no-visitado</td>
+                        <td>el estilo a un elemento cuando aún esta no-visitado</td>
                     </tr>
                     <tr>
                         <td><span class="CSS_Tag">selector:visited</span>{}</td>
-                        <td>Aplica el estilo a un elemento cuando ya ha sido visitado</td>
+                        <td>el estilo a un elemento cuando ya ha sido visitado</td>
                     </tr>
                     <tr>
                         <td><span class="CSS_Tag">selector:hover</span>{}</td>
-                        <td>Aplica el estilo al elemento cuando el ratón pasa por encima</td>
+                        <td>el estilo al elemento cuando el ratón pasa por encima</td>
                     </tr>
                     <tr>
-                        <td><span class="CSS_Tag">selector:nth-child(n)</span>{}</td>
-                        <td>Aplica el estilo al elemento N de tipo selector que es N hijo de su padre</td>
+                        <td><span class="CSS_Tag">selector:nth-child(<i>NroHijo</i>)</span>{}</td>
+                        <td>el estilo al elemento N de tipo selector que es N hijo de su padre</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:first-child</span>{}</td>
+                        <td>el estilo al primer elemento de tipo selector que es hijo de su padre</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:last-child</span>{}</td>
+                        <td>el estilo al último elemento de tipo selector que es hijo de su padre</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:nth-child(even/odd)</span>{}</td>
+                        <td>el estilo a los elementos pares o impares de tipo selector que son hijos de su padre</td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector:nth-child(<i>NroHijo</i>n)</span>{}</td>
+                        <td>Aplica el estilo a los elemento <i>cada N</i> de tipo selector que son hijos de su padre</td>
                     </tr>
                 </table>
-                <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Mas
-                    Selectores...</a><br><br>
+                <h4>Pseudo-Elementos: <span class="CSS_TxtComun">Los pseudo-elementos sirven para definir un estado específico a varios elementos a la vez (tipo h1, p, a). Los + Usados:</span></h4>
+                <table>
+                    <tr>
+                        <th style="width: 220px;">Pseudo-Elementos</th>
+                        <th>Aplica...</th>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector::first-letter</span>{}</td>
+                        <td>el estilo a la primer letra del elemento </td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector::selection</span>{}</td>
+                        <td>el estilo al seleccionar algo del elemento </td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector::before</span>{}</td>
+                        <td>el estilo antes del elemento </td>
+                    </tr>
+                    <tr>
+                        <td><span class="CSS_Tag">selector::after</span>{}</td>
+                        <td>el estilo después del elemento </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </main>

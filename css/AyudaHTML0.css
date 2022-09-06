@@ -9,6 +9,8 @@
     --ColorSombraElemento:rgb(230, 230, 247);
 }
 
+*{box-sizing: border-box;}
+
 /* Tag para marcar etiquetas y valores predeterminados */
 .CSS_Tag{font-style:italic; font-weight: bold; color:var(--ColorTag);}
 .CSS_Propiedad{font-style:italic; font-weight: bold; color:var(--ColorPropiedad);}
@@ -49,6 +51,7 @@ tr td:nth-child(1){column-width: 160px;}
 .di-b{display: block;}
 .ta-c{text-align: center;}
 .ta-l{text-align:left;}
+.ta-r{text-align:right;}
 .va-t{vertical-align:top;}
 .va-m{vertical-align:middle;}
 .va-b{vertical-align: bottom;}
@@ -149,6 +152,11 @@ tr td:nth-child(1){column-width: 160px;}
 .ejCSS3306{justify-content:flex-start; align-items:flex-start; flex-flow:row wrap-reverse;}
 .ejCSS3307{justify-content:flex-start; align-items:flex-start; flex-flow:row-reverse wrap-reverse;}
 .ejCSS3308{justify-content:flex-start; align-items:flex-start; flex-flow:column wrap; height:160px ;}
+.ejCSS350101{order:2; flex-grow:2;}
+.ejCSS350102{order:4; flex-grow:1;}
+.ejCSS350103{order:1; flex-grow:0.5;}
+.ejCSS350104{order:-3;}
+.ejCSS350105{flex-grow:3;}
 .ejCSS40{justify-content:flex-start; align-items:flex-start; flex-flow:row nowrap;}
 .ejCSS400101{position:sticky; top:0;}
 .ejCSS400102{position:sticky; top:10vh;}
@@ -203,9 +211,8 @@ tr td:nth-child(1){column-width: 160px;}
 .ejCSS530004{grid-area: propaganda;}
 .ejCSS530005{grid-area: footer;}
 
+.ejHTML1001{padding: 10px;}
 
-.ejSQLcmd{width: 100%;height: 50vh;}
-.ejSQLcheatsheet{width: 100%;height: 80vh;}
 .ejMVC{width: 100%;height: 80vh;}
 
 .ejPatrones{width: 100%;height: 50vh;}
@@ -290,6 +297,9 @@ tr td:nth-child(1){column-width: 160px;}
 .ejPiola0501 li:hover>ul{display: block;}
 .ejPiola0501 li ul li ul{right: -140px; top: 0;}
 .ejPiola06{margin-top: 100px; position: relative; z-index: 1;}
+
+.ejSQLcmd{width: 100%;height: 50vh;}
+.ejSQLcheatsheet{width: 100%;height: 80vh;}
 
 @media (max-width:1021px){
     .DosCols_50{width:98%;}    

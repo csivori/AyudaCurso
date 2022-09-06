@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="../img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>
+        Compilado de Instrucciones CSS de Flex-box (Items): Order, Flex-Grow,
+        Flex-Shrink y Flex-Basis
+      </h2>
+    </header>
+    <main>
+      <!-- Explicaciones -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <p class="CSS_Propiedad">order:</p>
+          <p>
+            Esta propiedad indica el orden en el que cada hijo debe aparecer
+            dentro del contenedor Flex. Por defecto es 0, sino hay que indicarlo
+            numéricamente
+          </p>
+          <p class="CSS_Propiedad">flex-grow:</p>
+          <p>
+            Esta propiedad indica en cada hijo de un contenedor Flex cual es su
+            "peso" (con flex-direction: row -&gt; indicará el "ancho" o con
+            flex-direction: column -&gt; indicará el "alto"). El peso lo
+            indicamos numéricamente. Por defecto es 0, ya en ese caso se asigna
+            como peso la distribución de espacio del contenedor Flex.
+          </p>
+        </div>
+        <div class="DosCols_50">
+          <p class="CSS_Propiedad">flex-shrink:</p>
+          <p>
+            Esta propiedad indica numéricamente la proporción en la que se
+            contraerá cada hijo dentro del contenedor Flex. Por defecto es 1, si
+            indico 0.5 se contraerá la mitad que sus hermanos y si indico 2 se
+            contraerá el doble que sus hermanos
+          </p>
+          <p class="CSS_Propiedad">flex-basis:</p>
+          <p>
+            Esta propiedad indica en cada hijo de un contenedor Flex cual es su
+            tamaño inicial (con flex-direction: row -&gt; indicará el "ancho" o
+            con flex-direction: column -&gt; indicará el "alto"). El tamaño lo
+            indicamos numéricamente en pixeles (##px).
+          </p>
+          <p class="CSS_Propiedad">flex</span>:<span class="CSS_Value"> &ltflex-grow&gt &ltflex-shrink&gt &ltflex-basis&gt</span></p>
+
+          <a
+            href="https://www.w3schools.com/css/css3_flexbox_items.asp"
+            target="_blank"
+            >Mas sobre propiedades Flex en los Hijos...</a
+          ><br /><br />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+          <!-- Order, Flex-Grow, Flex-Shrink y Flex-Basis -->
+          <h3>
+            <table>
+              <thead>
+                <th style="width:60px;">Ej.1:</th>
+                <th style="width:10px;"><span class="CSS_Propiedad">order</span></th>
+                <th style="width:100px;"><span class="CSS_Propiedad">flex-grow</span></th>
+                <th></th>
+              </thead>
+              <tbody class="CSS_TxtComun80">
+                <tr>
+                    <td class="ta-r">A1:</td>
+                    <td class="ta-c"><span class="CSS_Value"> 2</span></td>
+                    <td class="ta-c"><span class="CSS_Value"> 2</span></td>
+                    <td rowspan="4"><span class="CSS_TxtComun">(Ordena D, E, C, A, B con los tamaños determinados en flex-grow para A,B,C,E y para D define como tamaño el restante del contenedor)</span></td>
+                </tr>
+                <tr>
+                    <td class="ta-r">B1:</td>
+                    <td class="ta-c"><span class="CSS_Value"> 4</span></td>
+                    <td class="ta-c"><span class="CSS_Value"> 1</span></td>
+                </tr>
+                <tr>
+                    <td class="ta-r">C1:</td>
+                    <td class="ta-c"><span class="CSS_Value"> 1</span></td>
+                    <td class="ta-c"><span class="CSS_Value"> 0.5</span></td>
+                </tr>
+                <tr>
+                    <td class="ta-r">D1:</td>
+                    <td class="ta-c"><span class="CSS_Value">-3</span></td>
+                    <td class="ta-c"><span class="CSS_Value"> -</span></td>
+                </tr>
+                <tr>
+                    <td class="ta-r">E1:</td>
+                    <td class="ta-c"><span class="CSS_Value"> -</span></td>
+                    <td class="ta-c"><span class="CSS_Value"> 3</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </h3>
+          <div class="SimilContainerConMarco ejCSS3501">
+            <div class="Elemento ejCSS350101">A1</div>
+            <div class="Elemento ejCSS350102">B1</div>
+            <div class="Elemento ejCSS350103">C1</div>
+            <div class="Elemento ejCSS350104">D1</div>
+            <div class="Elemento ejCSS350105">E1</div>
+          </div>
+        </div>
+        <div class="DosCols_50"></div>
+      </div>
+    </footer>
+  </body>
+</html>
