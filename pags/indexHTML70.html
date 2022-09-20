@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso Java Codo a Codo: Clase 1 de HTML</title>
+    <link rel="icon" href="../img/AyudaHTML.bmp" />
+    <link rel="STYLESHEET" href="../css/AyudaHTML0.css" />
+    <script>
+      function allowDrop(ev) {
+        console.log("allowDrop(ev) -> ev.target.id: ", ev.target.id);
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        console.log("drag(ev) -> ev.target.id: ", ev.target.id);
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        console.log("drop(ev) -> ev.target.id: ", ev.target.id);
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <a href="./indexHTML.html"
+        ><img src="../img/Atras.png" alt="Volver Atras" width="50" height="40"
+      /></a>
+      <h2>Compilado de Instrucciones HTML para Drag & Drop</h2>
+    </header>
+    <main>
+      <!-- Explicaciones -->
+      <div class="DosColsP">
+        <div class="DosCols_50"></div>
+        <div class="DosCols_50"></div>
+      </div>
+    </main>
+    <footer>
+      <!-- Ejemplos -->
+      <div class="DosColsP">
+        <div class="DosCols_50">
+            <h3>Ej.1: <span class="CSS_Tag">&lt;img&gt;</span> Imagen con <span
+                class="CSS_Propiedad">draggable</span>=<span
+                class="CSS_Propiedad">"true"</span></h3>
+            <div class="SimilContainerSinMarco">
+                <div id="contenedor1" class="w25 rubberband p-10" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img id="elemento1" class="ejHTML7001" src="../img/burger.jfif" alt="mila" width=100% title="Drag & Drop entre los 4 contenedores" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div id="contenedor2" class="w25 rubberband p-10" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div id="contenedor3" class="w25 rubberband p-10" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <div id="contenedor4" class="w25 rubberband p-10" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+            </div>
+        </div>
+        <div class="DosCols_50"></div>
+      </div>
+    </footer>
+  </body>
+</html>
