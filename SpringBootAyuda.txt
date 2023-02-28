@@ -1,0 +1,244 @@
+SpringBoot
+	En CONTROLLER: Solo consume Servicios de la capa Service. NO ES BUENA PRACTICA CODEAR EN EL CONTROLLER.
+		Ejemplo:
+			@RestController
+			@RequestMapping("/personajes")
+			public class PersonajeController {
+			    private IPersonajeService personajeService;
+
+			    public PersonajeController(IPersonajeService personajeService) {
+			        this.personajeService = personajeService;
+			    }
+
+			    @GetMapping("/listar")
+			    public ResponseEntity<List<PersonajeDtoResponse>> listar() {
+			        return new ResponseEntity<>(personajeService.listarPersonajes(), HttpStatus.OK);
+			    }
+
+			    @GetMapping("/listar/{nombre}")
+			    public ResponseEntity<List<PersonajeDtoResponse>> listar(@PathVariable String nombre) {
+			        PersonajeNameDto personajeName = new PersonajeNameDto(nombre);
+			        return new ResponseEntity<>(personajeService.listarPersonajes(personajeName), HttpStatus.OK);
+			    }
+
+			    @PostMapping("/crear")
+			    public ResponseEntity<ResponseDto> crear(@Valid @RequestBody PersonajeDtoRequest personajeDto) {
+			        return new ResponseEntity<>(personajeService.cargarPersonaje(personajeDto), HttpStatus.OK);
+			    }
+
+		- Resumiendo:
+		     1. Antes de la declaración de la clase:
+			@RestController: indica a Spring que es una clase ControllerRest
+			@RequestMapping("/personajes"): indica el path global del Controller. Ej: localhost:8080/personajes
+
+		     2. Agregar el atributo privado declarando la capa de servicio e incluirlo en el constructor
+
+		     3. Antes de la declaración de cada método público (o 'servicio expuesto'):
+			    @GetMapping("/listar"): indica el path específico para este servicio GET. Ej: localhost:8080/personajes/listar
+			    @GetMapping("/listar/{nombre}"): entre llaves indicamos cada parámetro enviado x URL. Ej: localhost:8080/personajes/listar/Carlos
+			    @PostMapping("/crear"): indica el path específico para este servicio POST. Ej: localhost:8080/personajes/crear
+			
+		     4. En los métodos que esperen parámetros desde el Front, se debe incluir:
+			    @PathVariable: en la declaración del parámetro que viene en la URL.
+				    Ej Llamado: localhost:8080/listar/Pepe
+				    Ej Función: listar(@PathVariable String nombre)
+                            @RequestParam: en la declaración del parámetro que viene en la URL. 
+				    Ej Llamado: localhost:8080/listar?nombre=Pepe
+				    Ej Función: listar(@RequestParam String nombre)
+			    @RequestBody: en la declaración del parámetro que viene en el BODY. Ej: crear(@RequestBody PersonajeDtoRequest personajeDto)
+			    @Valid: Indica que el parámetro que viene en el BODY debe validarse con las anotaciones del DTO utilizado. 
+				    Ej: crear(@Valid @RequestBody PersonajeDtoRequest personajeDto)
+
+		     5. Todos los servicios enmascararán la respuesta en un ResponseEntity<?>, para agregar el Status HTTP que corresponda. Ej:
+			    Si responde un ResponseDto, debe enmascararse:
+				en la cabecera del método: public ResponseEntity<ResponseDto> crear(... 
+				en el return del método: return new ResponseEntity<>(personajeService.cargarPersonaje(personajeDto), HttpStatus.OK);
+
+	El SERVICE: Solo consume Servicios de la capa Repository. Su responsabilidad es codear la lógica de cada servicio, 
+		    utilizando los servicios expuestos x el Repositorio. También es su responsabilidad mapear entre los
+		    objetos internos del repositorio y los DTO)
+		Ejemplo:
+			@Service
+			public class PersonajeService implements IPersonajeService {
+
+			    IPersonajeRepository personajeRepository;
+
+			    public PersonajeService(IPersonajeRepository personajeRepository) {
+			        this.personajeRepository = personajeRepository;
+			    }
+
+			    @Override
+			    public ResponseDto cargarPersonaje(PersonajeDtoRequest p) {
+			        // Convierto PersonajeDTO -> Personaje
+			        Personaje personaje = mapPersonajeDto2Personaje(p);
+
+			        // Cargo Personaje Nuevo y Creo la respuesta
+			        if (personajeRepository.cargarPersonaje(personaje)) {
+			            return new ResponseDto("El Personaje " + p.getName() + " fue creado exitosamente!");
+			        } else {
+			            return new ResponseDto("El Personaje " + p.getName() + " NO pudo ser creado!");
+			        }
+			    }
+
+			    @Override
+			    public ResponseDto modificarPersonajeById(PersonajeDtoRequest p) {
+			        // Convierto PersonajeDTO -> Personaje
+			        Personaje personaje = mapPersonajeDto2Personaje(p);
+
+			        // Modifico Personaje por ID y Creo la respuesta
+			        if (personajeRepository.modificarPersonajeById(personaje)) {
+			            return new ResponseDto("El Personaje " + p.getName() + " fue modificado exitosamente!");
+			        } else {
+			            return new ResponseDto("El Personaje " + p.getName() + " con ID: " + p.getId() + " NO pudo ser modificado!");
+			        }
+			    }
+
+			    @Override
+			    public ResponseDto borrarPersonajeById(PersonajeIdDto id) {
+			        // Borro Personaje por ID y Creo la respuesta
+			        if (personajeRepository.borrarPersonajeById(id.getId())) {
+			            return new ResponseDto("El Personaje con ID: " + id.getId() + " fue borrado exitosamente!");
+			        } else {
+			            return new ResponseDto("El Personaje con ID: " + id.getId() + " NO pudo ser borrado!");
+			        }
+			    }
+
+			    @Override
+			    public List<PersonajeDtoResponse> listarPersonajes() {
+			        List<Personaje> p = personajeRepository.listarPersonajes();
+
+			        return mapPersonajes2PersonajesDto(p);
+			    }
+
+			    public List<PersonajeDtoResponse> listarPersonajes(PersonajeNameDto nombre) {
+			        List<Personaje> p = personajeRepository.listarPersonajes(nombre.getName());
+
+			        return mapPersonajes2PersonajesDto(p);
+			    }
+
+			    // Métodos Privados Mapper de Conversión
+			    private Personaje mapPersonajeDto2Personaje(PersonajeDtoRequest p) {
+			        if (p == null) {return null;}
+
+			        return new Personaje(p.getId(), p.getName(), p.getHeight(),
+			                p.getMass(), p.getHairColor(), p.getSkinColor(),
+			                p.getEyeColor(), p.getBirthYear(), p.getGender(),
+			                p.getHomeWorld(), p.getSpecies());
+			    }
+
+			    private PersonajeDtoResponse mapPersonaje2PersonajeDto(Personaje p) {
+			        if (p == null) {return null;}
+
+			        return new PersonajeDtoResponse(p.getId(), p.getName(), p.getHeight(),
+			                p.getMass(), p.getGender(), p.getHomeWorld(), p.getSpecies());
+			    }
+
+			    private List<PersonajeDtoResponse> mapPersonajes2PersonajesDto(List<Personaje> p) {
+			        if (p == null) {return null;}
+			        return p.stream().map(personaje -> mapPersonaje2PersonajeDto(personaje)).collect(Collectors.toList());
+			    }
+			}
+
+		- Resumiendo:
+		     1. Antes de la declaración de la clase:
+			@Service: indica a Spring que es una clase de Service
+
+		     2. Agregar el atributo privado declarando la capa de repositorio e incluirlo en el constructor
+
+		     3. Los parametros que vienen o van al Front deben ser convenientemente clases DTO, para no revelar el modelo de clases interno
+
+		     4. Generar los métodos privados necesarios para convertir objetos DTO -> modelo interno y viceversa
+
+		     5. Típicamente un método de Servicio se compone de 3 etapas:
+			1. Convertir objetos DTO recibidos x parámetro al modelo interno
+			2. Llamar a los métodos del Repositorio necesarios para realizar el servicio
+			3. Generar la respuesta en base al resultado de las acciones realizadas, que puede incluir convertir objetos recibidos
+			   de los métodos del repositorio (modelo interno) a objetos DTO para enviar al Frontend
+
+	Las Entidades: Representan el modelo interno o modelo del repositorio
+		- Ejemplo: 
+			@Data
+			@AllArgsConstructor
+			@NoArgsConstructor
+			public class Personaje {
+			    private int id;
+			    private String Name;
+			    private int height;
+			    private int mass;
+			    private String hairColor;
+			    private String skinColor;
+			    private String eyeColor;
+			    private String birthYear;
+			    private String gender;
+			}
+
+		- Resumiendo:
+		     1. Antes de la declaración de la clase:
+			@Data: Generará automáticamente los Getters y Setters
+			@NoArgsConstructor: Generará automáticamente un constructor ni parámentros
+			@AllArgsConstructor: Generará automáticamente un constructor con todos lo parámentros
+
+		     2. Cualquier constructor con algunos atributos se debe crear manualmente
+
+	Los DTO: Representan el modelo externo o modelo que se utiliza en los Controladores y en el FrontEnd
+		Anotaciones mas usadas para validar mapeos con los datos recibidos del FrontEnd:
+			@NotNull:
+			@AssertTrue:
+			@Size:		min=<num>, max=<num>, message="El campo debe contener entre" 
+					  Ej: @Size(min=1, max=100, message = "El nombre debe contener entre 1 y 100 caracteres")
+			@Min / @Max:	value=<num>, message="El mínimo debe ser xxx".
+					  Ej: @Min(value = 10, message = "La altura debe ser 10 como mínimo") 
+			@Email:
+			@NotEmpty:
+			@NotBlank:	message = "El campo no puede ser vacío"
+					  Ej: @NotBlank(message = "El color del pelo no puede ser vacío")
+			@Positive: 
+			@PositiveOrZero:
+			@Negative:	
+			@NegativeOrZero:
+			@Past:		
+			@PastOrPresent:
+			@Future:	
+			@FuturoOrPresent:
+
+		- Ejemplo:
+			@Data
+			@AllArgsConstructor
+			public class PersonajeDtoRequest {
+			    private int id;
+			    @Size(min=1, max=100, message = "El nombre debe contener entre 1 y 100 caracteres")
+			    private String name;
+			    @Min(value = 10, message = "La altura debe ser 10 como mínimo")
+			    private int height;
+			    @Min(value = 5, message = "El peso debe ser 5 como mínimo")
+			    private int mass;
+			    @NotBlank(message = "El color del pelo no puede ser vacío")
+			    private String hairColor;
+			    private String skinColor;
+			    private String eyeColor;
+			    private String birthYear;
+			    private String gender;
+			}
+
+		- Resumiendo:
+		     1. Antes de la declaración de la clase:
+			@Data: Generará automáticamente los Getters y Setters
+			@NoArgsConstructor: Generará automáticamente un constructor ni parámentros
+			@AllArgsConstructor: Generará automáticamente un constructor con todos lo parámentros
+
+		     2. Cualquier constructor con algunos atributos se debe crear manualmente
+
+		     3. Antes de cada atributo que lleve validación, agregar la anotación correspondiente 
+
+
+
+
+
+
+
+TESTING: 
+https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html
+https://www.baeldung.com/integration-testing-in-spring
+https://www.baeldung.com/spring-mock-mvc-rest-assured
+https://site.mockito.org/
+

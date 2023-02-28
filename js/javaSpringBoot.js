@@ -3,6 +3,7 @@ let a = new ClavesYValores("Entrar al SpringInitializer (<a href='https://start.
 a.add(new ClaveYValor("Project", "Maven"));
 a.add(new ClaveYValor("Languaje", "Java"));
 a.add(new ClaveYValor("Spring Boot", "2.7.5"));
+
 let b = new ClavesYValores("Project Metadata:");
 b.add(new ClaveYValor("Group", "Vacío"));
 b.add(new ClaveYValor("Artifact", "Nombre del Proyecto"));
@@ -14,6 +15,10 @@ b = new ClavesYValores("Add Dependencies...");
 b.add(new Valor("Spring Boot Dev Tools"));
 b.add(new Valor("Lombok"));
 b.add(new Valor("Spring Web"));
+b.add(new Valor("--> Para proyectos con DB agregar:"));
+b.add(new Valor("----> Spring Data JPA"));
+b.add(new Valor("----> H2 Database"));
+b.add(new Valor("----> MySQL Driver"));
 a.add(new SubValor(b));
 a.add(new Valor("Click en GENERATE"));
 
@@ -50,6 +55,10 @@ pasos.add(new PasoASeguir(a));
 // b.add(new Valor("Spring Boot Dev Tools"));
 // b.add(new Valor("Lombok"));
 // b.add(new Valor("Spring Web"));
+// b.add(new Valor("Para proyectos con DB agregar:"));
+// b.add(new Valor("Spring Data JPA"));
+// b.add(new Valor("H2 Database"));
+// b.add(new Valor("MySQL Driver"));
 // a.add(new SubValor(b));
 // a.add(new Valor("Click en GENERATE"));
 
