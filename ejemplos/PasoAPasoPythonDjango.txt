@@ -1,0 +1,20 @@
+1. Abro un Bash en el Directorio Raiz
+2. Creo el Entorno Virtual            >$ python -m venv mientorno
+3. Activo el Entorno Virtual creado   >$ source ./mientorno/Scripts/activate
+4. Instalar DJANGO                    >$ pip install Django==3.2.18
+5. Crear Proyecto Django              >$ django-admin startproject "Primer_Prj_Django"
+6. Ejecutar el Proyecto Inicial
+  6.1. Entro al directorio de Django  >$ cd Primer_Prj_Django
+  6.2. Ejecuto manage.py              >$ python manage.py runserver
+  6.3. Abro el browser en locapp:8000 y verifico que funciona el template inicial
+7. Salvo la SECRET_KEY
+  7.1. Creo archivo .env con la SECRET_KEY
+  7.1. Creo archivo .env con la SECRET_KEY
+  7.1. Creo archivo .env con la SECRET_KEY
+8. Creo una app llamada app_publica   >$ python manage.py startapp app_publica
+
+
+Otros Comandos
+Listar los paquetes instalados en el entorno >$ pip list
+Preparar archivo para clonar entorno virtual >$ pip freeze >paquetes.txt
+                                             >$ pip install
